@@ -1,0 +1,1850 @@
+﻿<body id="welcome" class="template-index" <!--="" onload="liteModal.open('#beiber') -->">
+<form method="post" action="#" id="form1" autocomplete="off">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg1NzkwNTA1Mg9kFgICAw9kFgICAQ8WAh4JaW5uZXJodG1sBeJSPGRpdiBjbGFzcz0ncHJvZHVjdCBwcm9kdWN0X19wcm9kdWN0LWdyaWQtaXRlbSBjb2x1bW5zLTMgY29sLXNtLTQgZmxleGlibGUtaXRlbScgaXRlbXNjb3BlID48ZGl2IGNsYXNzPSdldGlxdWV0YV9vZmVydGEnPi0zMSU8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X2ltZyc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxNzIwNy90YWJsZXQtYW9jLTctYXJtLWNvcnRleC1hOS1kdWFsLWNvcmUtNTEybWItOGdiLW1vcmFkby1hbmRyb2lkLTQtMi1kNzBqMTEtOWInPjxpbWcgaXRlbXByb3A9J2ltYWdlJyBzcmM9J2h0dHA6Ly93d3cucGNwZXJmb3JtYW5jZS5jb20ucGUvaW50cmFuZXQvaW1nL2ltZ19jaGljby5hc3B4P21heHNpemU9MTU1JmFtcDtpbWc9aXRlbXMvTU9SQURBLmpwZycgYWx0PSdNdW5kb3RlayBUYWJsZXRzIE5vdGVib29rcyBQZXLDuicgdGl0bGU9J1RhYmxldCBhb2MgNyBhcm0gY29ydGV4IGE5IGR1YWwgY29yZSA1MTJtYiA4Z2IgbW9yYWRvIGFuZHJvaWQgNC4yIGQ3MGoxMS05YicgLz48L2E+PC9kaXY+PGRpdiBjbGFzcz0nbWFyY2FfcHJvZCc+QU9DPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9uYW1lIGl0ZW1ub20nIGl0ZW1wcm9wPSduYW1lJz48YSBocmVmPScvcHJvZHVjdG8vMDAwMDAwMDE3MjA3L3RhYmxldC1hb2MtNy1hcm0tY29ydGV4LWE5LWR1YWwtY29yZS01MTJtYi04Z2ItbW9yYWRvLWFuZHJvaWQtNC0yLWQ3MGoxMS05YicgdGl0bGU9J1RhYmxldCBhb2MgNyBhcm0gY29ydGV4IGE5IGR1YWwgY29yZSA1MTJtYiA4Z2IgbW9yYWRvIGFuZHJvaWQgNC4yIGQ3MGoxMS05Yic+VGFibGV0IGFvYyA3IiBhcm0gY29ydGV4IGE5IGR1YWwgY29yZSA1MTJtYiA4Z2IgLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAyNDkuMDAnPlMvLiAyNDkuMDA8L3NwYW4+PHNwYW4gY2xhc3M9J21vbmV5JyBkYXRhLWN1cnJlbmN5LXVzZD0nUy8uIDM1OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gMzU5LjAwPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3QgcHJvZHVjdF9fcHJvZHVjdC1ncmlkLWl0ZW0gY29sdW1ucy0zIGNvbC1zbS00IGZsZXhpYmxlLWl0ZW0nIGl0ZW1zY29wZSA+PGRpdiBjbGFzcz0nZXRpcXVldGFfb2ZlcnRhJz4tMjElPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9pbWcnPjxhIGhyZWY9Jy9wcm9kdWN0by8wMDAwMDAwMTY4MjgvcG93ZXJsaW5lLWQtbGluay01MDAtZGhwLXczMTFhdi13aXJlbGVzcy1uLW1pbmktc3RhcnRlci01MDAtbWJwcy0xMC0xMDBiYXNlLXR4Jz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zL2RsaW5rLmpwZycgYWx0PSdNdW5kb3RlayBUYWJsZXRzIE5vdGVib29rcyBQZXLDuicgdGl0bGU9J1Bvd2VybGluZSBkLWxpbmsgNTAwIGRocC13MzExYXYgd2lyZWxlc3MgbiBtaW5pIHN0YXJ0ZXIgNTAwIG1icHMgMTAvMTAwYmFzZS10eCcgLz48L2E+PC9kaXY+PGRpdiBjbGFzcz0nbWFyY2FfcHJvZCc+RC1MSU5LPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9uYW1lIGl0ZW1ub20nIGl0ZW1wcm9wPSduYW1lJz48YSBocmVmPScvcHJvZHVjdG8vMDAwMDAwMDE2ODI4L3Bvd2VybGluZS1kLWxpbmstNTAwLWRocC13MzExYXYtd2lyZWxlc3Mtbi1taW5pLXN0YXJ0ZXItNTAwLW1icHMtMTAtMTAwYmFzZS10eCcgdGl0bGU9J1Bvd2VybGluZSBkLWxpbmsgNTAwIGRocC13MzExYXYgd2lyZWxlc3MgbiBtaW5pIHN0YXJ0ZXIgNTAwIG1icHMgMTAvMTAwYmFzZS10eCc+UG93ZXJsaW5lIGQtbGluayA1MDAgZGhwLXczMTFhdiB3aXJlbGVzcyBuIG1pbmkgLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAyOTguMTYnPlMvLiAyOTguMTY8L3NwYW4+PHNwYW4gY2xhc3M9J21vbmV5JyBkYXRhLWN1cnJlbmN5LXVzZD0nUy8uIDM3OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gMzc5LjAwPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3QgcHJvZHVjdF9fcHJvZHVjdC1ncmlkLWl0ZW0gY29sdW1ucy0zIGNvbC1zbS00IGZsZXhpYmxlLWl0ZW0nIGl0ZW1zY29wZSA+PGRpdiBjbGFzcz0nZXRpcXVldGFfb2ZlcnRhJz4tMzMlPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9pbWcnPjxhIGhyZWY9Jy9wcm9kdWN0by8wMDAwMDAwMTczOTUvY2FtYXJhLWlwLWQtbGluay1iYWJ5Y2FtLWRjcy04MjVsLXdpZmktODAyLTExLWItZy1uLTItNC1naHotNzIwcC1oZCc+PGltZyBpdGVtcHJvcD0naW1hZ2UnIHNyYz0naHR0cDovL3d3dy5wY3BlcmZvcm1hbmNlLmNvbS5wZS9pbnRyYW5ldC9pbWcvaW1nX2NoaWNvLmFzcHg/bWF4c2l6ZT0xNTUmYW1wO2ltZz1pdGVtcy9jYW0lMjAxLkpQRycgYWx0PSdNdW5kb3RlayBUYWJsZXRzIE5vdGVib29rcyBQZXLDuicgdGl0bGU9J0NhbWFyYSBpcCBkLWxpbmsgYmFieWNhbSBkY3MtODI1bCB3aWZpIDgwMi4xMSBiL2cvbiAyLjQgZ2h6IDcyMHAgaGQnIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9J21hcmNhX3Byb2QnPkQtTElOSzwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfbmFtZSBpdGVtbm9tJyBpdGVtcHJvcD0nbmFtZSc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxNzM5NS9jYW1hcmEtaXAtZC1saW5rLWJhYnljYW0tZGNzLTgyNWwtd2lmaS04MDItMTEtYi1nLW4tMi00LWdoei03MjBwLWhkJyB0aXRsZT0nQ2FtYXJhIGlwIGQtbGluayBiYWJ5Y2FtIGRjcy04MjVsIHdpZmkgODAyLjExIGIvZy9uIDIuNCBnaHogNzIwcCBoZCc+Q2FtYXJhIGlwIGQtbGluayBiYWJ5Y2FtIGRjcy04MjVsIHdpZmkgODAyLjExIGIvLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiA1MzkuMDAnPlMvLiA1MzkuMDA8L3NwYW4+PHNwYW4gY2xhc3M9J21vbmV5JyBkYXRhLWN1cnJlbmN5LXVzZD0nUy8uIDc5OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gNzk5LjAwPC9zcGFuPjwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3QgcHJvZHVjdF9fcHJvZHVjdC1ncmlkLWl0ZW0gY29sdW1ucy0zIGNvbC1zbS00IGZsZXhpYmxlLWl0ZW0nIGl0ZW1zY29wZSA+PGRpdiBjbGFzcz0ncHJvZHVjdF9pbWcnPjxhIGhyZWY9Jy9wcm9kdWN0by8wMDAwMDAwMTkxNTYvY29tcHV0YWRvcmEtYWlvLWhwLXBhdmlsaW9uLTIzLXExNDVsYS1pbnRlbC1jb3JlLWk1LTQ1OTB0LTItMGdoei04Z2ItMnRiLWR2ZC1ydy0yMy13aW5kb3dzLTEwJz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zLzAwMDAwMDAxOTE1Nl9pbWdfMS00NjU5MTUwXzFbMV0uanBnJyBhbHQ9J011bmRvdGVrIFRhYmxldHMgTm90ZWJvb2tzIFBlcsO6JyB0aXRsZT0nQ29tcHV0YWRvcmEgYWlvIGhwIHBhdmlsaW9uIDIzLXExNDVsYSBpbnRlbCBjb3JlIGk1IDQ1OTB0IDIuMGdoeiA4Z2IgMnRiIGR2ZC1ydyAyMyB3aW5kb3dzIDEwJyAvPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdtYXJjYV9wcm9kJz5IUDwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfbmFtZSBpdGVtbm9tJyBpdGVtcHJvcD0nbmFtZSc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxOTE1Ni9jb21wdXRhZG9yYS1haW8taHAtcGF2aWxpb24tMjMtcTE0NWxhLWludGVsLWNvcmUtaTUtNDU5MHQtMi0wZ2h6LThnYi0ydGItZHZkLXJ3LTIzLXdpbmRvd3MtMTAnIHRpdGxlPSdDb21wdXRhZG9yYSBhaW8gaHAgcGF2aWxpb24gMjMtcTE0NWxhIGludGVsIGNvcmUgaTUgNDU5MHQgMi4wZ2h6IDhnYiAydGIgZHZkLXJ3IDIzIHdpbmRvd3MgMTAnPkNvbXB1dGFkb3JhIGFpbyBocCBwYXZpbGlvbiAyMy1xMTQ1bGEgaW50ZWwgY29yZS4uLjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X3ByaWNlJz48c3BhbiBjbGFzcz0nbW9uZXknIGRhdGEtY3VycmVuY3ktdXNkPSdTLy4gNDUsNTE3LjY0Jz5TLy4gNDUsNTE3LjY0PC9zcGFuPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiA0LDk5OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gNCw5OTkuMDA8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdCBwcm9kdWN0X19wcm9kdWN0LWdyaWQtaXRlbSBjb2x1bW5zLTMgY29sLXNtLTQgZmxleGlibGUtaXRlbScgaXRlbXNjb3BlID48ZGl2IGNsYXNzPSdldGlxdWV0YV9vZmVydGEnPi00OSU8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X2ltZyc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxNDE0Ny9pbXByZXNvcmEtbXVsdGlmdW5jaW9uYWwtaHAtZGVza2pldC1pbmstYWR2YW50YWdlLTM1MTUtZS1wcmludC13aXJlbGVzcy00ODAweDEyMDBkcGktMjBwcG0tdXNiMi0wJz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zLzM1MTUlMjAxLnBuZycgYWx0PSdNdW5kb3RlayBUYWJsZXRzIE5vdGVib29rcyBQZXLDuicgdGl0bGU9J0ltcHJlc29yYSBtdWx0aWZ1bmNpb25hbCBocCBkZXNramV0IGluayBhZHZhbnRhZ2UgMzUxNSBlLXByaW50IHdpcmVsZXNzIDQ4MDB4MTIwMGRwaSAyMHBwbSB1c2IyLjAnIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9J21hcmNhX3Byb2QnPkhQPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9uYW1lIGl0ZW1ub20nIGl0ZW1wcm9wPSduYW1lJz48YSBocmVmPScvcHJvZHVjdG8vMDAwMDAwMDE0MTQ3L2ltcHJlc29yYS1tdWx0aWZ1bmNpb25hbC1ocC1kZXNramV0LWluay1hZHZhbnRhZ2UtMzUxNS1lLXByaW50LXdpcmVsZXNzLTQ4MDB4MTIwMGRwaS0yMHBwbS11c2IyLTAnIHRpdGxlPSdJbXByZXNvcmEgbXVsdGlmdW5jaW9uYWwgaHAgZGVza2pldCBpbmsgYWR2YW50YWdlIDM1MTUgZS1wcmludCB3aXJlbGVzcyA0ODAweDEyMDBkcGkgMjBwcG0gdXNiMi4wJz5JbXByZXNvcmEgbXVsdGlmdW5jaW9uYWwgaHAgZGVza2pldCBpbmsgYWR2YW50YWcuLi48L2E+PC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9wcmljZSc+PHNwYW4gY2xhc3M9J21vbmV5JyBkYXRhLWN1cnJlbmN5LXVzZD0nUy8uIDEwMS4zNyc+Uy8uIDEwMS4zNzwvc3Bhbj48c3BhbiBjbGFzcz0nbW9uZXknIGRhdGEtY3VycmVuY3ktdXNkPSdTLy4gMTk5LjAwJyBzdHlsZT0ndGV4dC1kZWNvcmF0aW9uOmxpbmUtdGhyb3VnaDsgY29sb3I6IzU1NTU1NTsgZm9udC1zaXplOjEzcHg7IGRpc3BsYXk6YmxvY2snPlMvLiAxOTkuMDA8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdCBwcm9kdWN0X19wcm9kdWN0LWdyaWQtaXRlbSBjb2x1bW5zLTMgY29sLXNtLTQgZmxleGlibGUtaXRlbScgaXRlbXNjb3BlID48ZGl2IGNsYXNzPSdldGlxdWV0YV9vZmVydGEnPi0xOCU8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X2ltZyc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxODM4NS9ub3RlYm9vay1ocC1wcm9ib29rLTY1NS1nMS1xdWFkLWNvcmUtYTgtNTU1MC0yLTEwZ2h6LThnYi01MDBnYi0xNS02LW5vLWR2ZC13OC0xJz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zLzAwMDAwMDAxODM4NV9pbWdfMS1jc21fUHJvYm9vazY1NV9UZWFzZXJfY2UwMDUxYjk4M1sxXS5qcGcnIGFsdD0nTXVuZG90ZWsgVGFibGV0cyBOb3RlYm9va3MgUGVyw7onIHRpdGxlPSdOb3RlYm9vayBocCBwcm9ib29rIDY1NSBnMSBxdWFkIGNvcmUgYTgtNTU1MCAyLjEwZ2h6IDhnYiA1MDBnYiAxNS42IG5vLWR2ZCB3OC4xJyAvPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdtYXJjYV9wcm9kJz5IUDwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfbmFtZSBpdGVtbm9tJyBpdGVtcHJvcD0nbmFtZSc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxODM4NS9ub3RlYm9vay1ocC1wcm9ib29rLTY1NS1nMS1xdWFkLWNvcmUtYTgtNTU1MC0yLTEwZ2h6LThnYi01MDBnYi0xNS02LW5vLWR2ZC13OC0xJyB0aXRsZT0nTm90ZWJvb2sgaHAgcHJvYm9vayA2NTUgZzEgcXVhZCBjb3JlIGE4LTU1NTAgMi4xMGdoeiA4Z2IgNTAwZ2IgMTUuNiBuby1kdmQgdzguMSc+Tm90ZWJvb2sgaHAgcHJvYm9vayA2NTUgZzEgcXVhZCBjb3JlIGE4LTU1NTAgMi4xLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAxLDYzMi40MCc+Uy8uIDEsNjMyLjQwPC9zcGFuPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAxLDk5OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gMSw5OTkuMDA8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdCBwcm9kdWN0X19wcm9kdWN0LWdyaWQtaXRlbSBjb2x1bW5zLTMgY29sLXNtLTQgZmxleGlibGUtaXRlbScgaXRlbXNjb3BlID48ZGl2IGNsYXNzPSdldGlxdWV0YV9vZmVydGEnPi0xMCU8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X2ltZyc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxOTIxNi9ub3RlYm9vay1sZW5vdm8taWRlYXBhZC0zMDAtaW50ZWwtY2VsZXJvbi1uMzA1MC0xLTYwZ2h6LTRnYi01MDBnYi1kdmQtcnctMTQtaGQtd2luZG93cy0xMCc+PGltZyBpdGVtcHJvcD0naW1hZ2UnIHNyYz0naHR0cDovL3d3dy5wY3BlcmZvcm1hbmNlLmNvbS5wZS9pbnRyYW5ldC9pbWcvaW1nX2NoaWNvLmFzcHg/bWF4c2l6ZT0xNTUmYW1wO2ltZz1pdGVtcy8wMDAwMDAwMTkyMTZfaW1nXzEtbGVub3ZvX2xlbm92by1pZGVhcGFkLTMwMC1zaWx2ZXItbm90ZWJvb2stLTE0LWluY2gtaW50ZWwtY29yZS1pNS02MjAwdS1yYW0tNGdiLWhkZC01MDAtZ2ItMi1nYi1hdGktZXhvLXByby1yNS1tMzMwLWRkcjNsLV9mdWxsMDMuanBnJyBhbHQ9J011bmRvdGVrIFRhYmxldHMgTm90ZWJvb2tzIFBlcsO6JyB0aXRsZT0nTm90ZWJvb2sgbGVub3ZvIGlkZWFwYWQgMzAwIGludGVsIGNlbGVyb24gbjMwNTAgMS42MGdoeiA0Z2IgNTAwZ2IgZHZkLXJ3IDE0aGQgd2luZG93cyAxMCcgLz48L2E+PC9kaXY+PGRpdiBjbGFzcz0nbWFyY2FfcHJvZCc+TEVOT1ZPPC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdF9uYW1lIGl0ZW1ub20nIGl0ZW1wcm9wPSduYW1lJz48YSBocmVmPScvcHJvZHVjdG8vMDAwMDAwMDE5MjE2L25vdGVib29rLWxlbm92by1pZGVhcGFkLTMwMC1pbnRlbC1jZWxlcm9uLW4zMDUwLTEtNjBnaHotNGdiLTUwMGdiLWR2ZC1ydy0xNC1oZC13aW5kb3dzLTEwJyB0aXRsZT0nTm90ZWJvb2sgbGVub3ZvIGlkZWFwYWQgMzAwIGludGVsIGNlbGVyb24gbjMwNTAgMS42MGdoeiA0Z2IgNTAwZ2IgZHZkLXJ3IDE0aGQgd2luZG93cyAxMCc+Tm90ZWJvb2sgbGVub3ZvIGlkZWFwYWQgMzAwIGludGVsIGNlbGVyb24gbjMwNTAgLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAxLDQzMi4wMic+Uy8uIDEsNDMyLjAyPC9zcGFuPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiAxLDU5OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gMSw1OTkuMDA8L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0ncHJvZHVjdCBwcm9kdWN0X19wcm9kdWN0LWdyaWQtaXRlbSBjb2x1bW5zLTMgY29sLXNtLTQgZmxleGlibGUtaXRlbScgaXRlbXNjb3BlID48ZGl2IGNsYXNzPSdldGlxdWV0YV9vZmVydGEnPi0xMyU8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X2ltZyc+PGEgaHJlZj0nL3Byb2R1Y3RvLzAwMDAwMDAxODI4Mi90YWJsZXQtc2Ftc3VuZy1nYWxheHktdGFiLWUtOS02LWFuZHJvaWQtNC00LTEtNWdiLThnYi0xLTNnaHotcXVhZC1jb3JlLWNvbG9yLW5lZ3JvJz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zLzAwMDAwMDAxODI4Ml9pbWdfMS1wb3J0c2FtLmpwZycgYWx0PSdNdW5kb3RlayBUYWJsZXRzIE5vdGVib29rcyBQZXLDuicgdGl0bGU9J1RhYmxldCBzYW1zdW5nIGdhbGF4eSB0YWIgZSA5LjYgYW5kcm9pZCA0LjQgMS41Z2IgOGdiIDEuM2doeiBxdWFkLWNvcmUgY29sb3IgbmVncm8nIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9J21hcmNhX3Byb2QnPlNBTVNVTkc8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X25hbWUgaXRlbW5vbScgaXRlbXByb3A9J25hbWUnPjxhIGhyZWY9Jy9wcm9kdWN0by8wMDAwMDAwMTgyODIvdGFibGV0LXNhbXN1bmctZ2FsYXh5LXRhYi1lLTktNi1hbmRyb2lkLTQtNC0xLTVnYi04Z2ItMS0zZ2h6LXF1YWQtY29yZS1jb2xvci1uZWdybycgdGl0bGU9J1RhYmxldCBzYW1zdW5nIGdhbGF4eSB0YWIgZSA5LjYgYW5kcm9pZCA0LjQgMS41Z2IgOGdiIDEuM2doeiBxdWFkLWNvcmUgY29sb3IgbmVncm8nPlRhYmxldCBzYW1zdW5nIGdhbGF4eSB0YWIgZSA5LjYiIGFuZHJvaWQgNC40IDEuNS4uLjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X3ByaWNlJz48c3BhbiBjbGFzcz0nbW9uZXknIGRhdGEtY3VycmVuY3ktdXNkPSdTLy4gODAzLjcwJz5TLy4gODAzLjcwPC9zcGFuPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiA5MjkuMDAnIHN0eWxlPSd0ZXh0LWRlY29yYXRpb246bGluZS10aHJvdWdoOyBjb2xvcjojNTU1NTU1OyBmb250LXNpemU6MTNweDsgZGlzcGxheTpibG9jayc+Uy8uIDkyOS4wMDwvc3Bhbj48L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0IHByb2R1Y3RfX3Byb2R1Y3QtZ3JpZC1pdGVtIGNvbHVtbnMtMyBjb2wtc20tNCBmbGV4aWJsZS1pdGVtJyBpdGVtc2NvcGUgPjxkaXYgY2xhc3M9J2V0aXF1ZXRhX29mZXJ0YSc+LTE5JTwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfaW1nJz48YSBocmVmPScvcHJvZHVjdG8vMDAwMDAwMDE4MTI2L3RhYmxldC1zYW1zdW5nLWdhbGF4eS10YWItYS04LTAtYW5kcm9pZC01LTAtMmdiLTE2Z2ItcXVhZC1jb3JlLTEtMi1naHotY29sb3ItYmxhbmNvJz48aW1nIGl0ZW1wcm9wPSdpbWFnZScgc3JjPSdodHRwOi8vd3d3LnBjcGVyZm9ybWFuY2UuY29tLnBlL2ludHJhbmV0L2ltZy9pbWdfY2hpY28uYXNweD9tYXhzaXplPTE1NSZhbXA7aW1nPWl0ZW1zL1NNUDM1ME5aV0FQRU8ucG5nJyBhbHQ9J011bmRvdGVrIFRhYmxldHMgTm90ZWJvb2tzIFBlcsO6JyB0aXRsZT0nVGFibGV0IHNhbXN1bmcgZ2FsYXh5IHRhYiBhIDguMCBhbmRyb2lkIDUuMCAyZ2IgMTZnYiBxdWFkLWNvcmUgMS4yIGdoeiBjb2xvciBibGFuY28nIC8+PC9hPjwvZGl2PjxkaXYgY2xhc3M9J21hcmNhX3Byb2QnPlNBTVNVTkc8L2Rpdj48ZGl2IGNsYXNzPSdwcm9kdWN0X25hbWUgaXRlbW5vbScgaXRlbXByb3A9J25hbWUnPjxhIGhyZWY9Jy9wcm9kdWN0by8wMDAwMDAwMTgxMjYvdGFibGV0LXNhbXN1bmctZ2FsYXh5LXRhYi1hLTgtMC1hbmRyb2lkLTUtMC0yZ2ItMTZnYi1xdWFkLWNvcmUtMS0yLWdoei1jb2xvci1ibGFuY28nIHRpdGxlPSdUYWJsZXQgc2Ftc3VuZyBnYWxheHkgdGFiIGEgOC4wIGFuZHJvaWQgNS4wIDJnYiAxNmdiIHF1YWQtY29yZSAxLjIgZ2h6IGNvbG9yIGJsYW5jbyc+VGFibGV0IHNhbXN1bmcgZ2FsYXh5IHRhYiBhIDguMCIgYW5kcm9pZCA1LjAgMmdiLi4uPC9hPjwvZGl2PjxkaXYgY2xhc3M9J3Byb2R1Y3RfcHJpY2UnPjxzcGFuIGNsYXNzPSdtb25leScgZGF0YS1jdXJyZW5jeS11c2Q9J1MvLiA4MTEuMzYnPlMvLiA4MTEuMzY8L3NwYW4+PHNwYW4gY2xhc3M9J21vbmV5JyBkYXRhLWN1cnJlbmN5LXVzZD0nUy8uIDk5OS4wMCcgc3R5bGU9J3RleHQtZGVjb3JhdGlvbjpsaW5lLXRocm91Z2g7IGNvbG9yOiM1NTU1NTU7IGZvbnQtc2l6ZToxM3B4OyBkaXNwbGF5OmJsb2NrJz5TLy4gOTk5LjAwPC9zcGFuPjwvZGl2PjwvZGl2PmRkrXBMglRHZUXo7UlRmEcK/JxpaHqOi9XKFSlCjr37V7k=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334">
+</div>               
+<!--[if lt IE 7]>
+<p class="chromeframe">Estas usando un navegador <strong>desactualizado</strong>. Porfavor <a href="http://browsehappy.com/">actualiza tu navegador</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activa Google Chrome Frame</a> y mejora tu navegacion.</p>
+<![endif]-->
+<div id="wrapper">
+    <!-- Inicio de Cabecera -->
+    
+
+ <script type="text/javascript">
+     $(document).ready(function () {
+         $('.bxslider').bxSlider({
+             auto: true,
+             autoControls: true,
+             mode: 'fade'
+         });
+ });
+
+
+//setInterval(func, 3000);
+ $(document).ready(function () {
+     var t;
+     var conta = 0;
+     var stopHover = 0;
+     $("#ddmenu")
+	  .mouseenter(function () {
+	      if (!stopHover) {
+	          stopHover = 1;
+	          //t = setTimeout("$('#apaguen').css('display', 'block');", 100);
+	      }
+	  }
+	  )
+	  .mouseleave(function () {
+	      clearTimeout(t);
+	      stopHover = 0;
+	      //$('#apaguen').delay(500).css('display', 'none');
+	  });
+
+
+ });
+    
+
+     /**
+     * @preserve
+     * Project: Bootstrap Hover Dropdown
+     * Author: Cameron Spear
+     * Version: v2.1.3
+     * Contributors: Mattia Larentis
+     * Dependencies: Bootstrap's Dropdown plugin, jQuery
+     * Description: A simple plugin to enable Bootstrap dropdowns to active on hover and provide a nice user experience.
+     * License: MIT
+     * Homepage: http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
+     */
+     ;  (function ($, window, undefined) {
+         // outside the scope of the jQuery plugin to
+         // keep track of all dropdowns
+         var $allDropdowns = $();
+
+         // if instantlyCloseOthers is true, then it will instantly
+         // shut other nav items when a new one is hovered over
+         $.fn.dropdownHover = function (options) {
+             // don't do anything if touch is supported
+             // (plugin causes some issues on mobile)
+             if ('ontouchstart' in document) return this; // don't want to affect chaining
+
+             // the element we really care about
+             // is the dropdown-toggle's parent
+             $allDropdowns = $allDropdowns.add(this.parent());
+
+             return this.each(function () {
+                 var $this = $(this),
+                $parent = $this.parent(),
+                defaults = {
+                    delay: 500,
+                    hoverDelay: 0,
+                    instantlyCloseOthers: true
+                },
+                data = {
+                    delay: $(this).data('delay'),
+                    hoverDelay: $(this).data('hover-delay'),
+                    instantlyCloseOthers: $(this).data('close-others')
+                },
+                showEvent = 'show.bs.dropdown',
+                hideEvent = 'hide.bs.dropdown',
+                 // shownEvent  = 'shown.bs.dropdown',
+                 // hiddenEvent = 'hidden.bs.dropdown',
+                settings = $.extend(true, {}, defaults, options, data),
+                timeout, timeoutHover;
+
+                 $parent.hover(function (event) {
+                     // so a neighbor can't open the dropdown
+                     if (!$parent.hasClass('open') && !$this.is(event.target)) {
+                         // stop this event, stop executing any code
+                         // in this callback but continue to propagate
+                         return true;
+                     }
+
+                     openDropdown(event);
+                 }, function () {
+                     // clear timer for hover event
+                     window.clearTimeout(timeoutHover)
+                     timeout = window.setTimeout(function () {
+                         $this.attr('aria-expanded', 'false');
+                         $parent.removeClass('open');
+                         $this.trigger(hideEvent);
+                     }, settings.delay);
+                 });
+
+                 // this helps with button groups!
+                 $this.hover(function (event) {
+                     // this helps prevent a double event from firing.
+                     // see https://github.com/CWSpear/bootstrap-hover-dropdown/issues/55
+                     if (!$parent.hasClass('open') && !$parent.is(event.target)) {
+                         // stop this event, stop executing any code
+                         // in this callback but continue to propagate
+                         return true;
+                     }
+
+                     openDropdown(event);
+                 });
+
+                 // handle submenus
+                 $parent.find('.dropdown-submenu').each(function () {
+                     var $this = $(this);
+                     var subTimeout;
+                     $this.hover(function () {
+                         window.clearTimeout(subTimeout);
+                         $this.children('.dropdown-menu').show();
+                         // always close submenu siblings instantly
+                         $this.siblings().children('.dropdown-menu').hide();
+                     }, function () {
+                         var $submenu = $this.children('.dropdown-menu');
+                         subTimeout = window.setTimeout(function () {
+                             $submenu.hide();
+                         }, settings.delay);
+                     });
+                 });
+
+                 function openDropdown(event) {
+                     // clear dropdown timeout here so it doesnt close before it should
+                     window.clearTimeout(timeout);
+                     // restart hover timer
+                     window.clearTimeout(timeoutHover);
+
+                     // delay for hover event.  
+                     timeoutHover = window.setTimeout(function () {
+                         $allDropdowns.find(':focus').blur();
+
+                         if (settings.instantlyCloseOthers === true)
+                             $allDropdowns.removeClass('open');
+
+                         // clear timer for hover event
+                         window.clearTimeout(timeoutHover);
+                         $this.attr('aria-expanded', 'true');
+                         $parent.addClass('open');
+                         $this.trigger(showEvent);
+                     }, settings.hoverDelay);
+                 }
+             });
+         };
+
+         $(document).ready(function () {
+             $('[data-hover="dropdown"]').dropdownHover();
+         });
+     })(jQuery, window);
+</script>
+ <style type="text/css">
+    .resultIntui
+    {
+        max-height:400px;
+        overflow-x:hidden;
+    }
+    
+ </style>
+ <script type="text/javascript">
+     $(window).load(function () {
+         $(".cargandopagina").hide();
+     });
+     var typingTimer;
+     var doneTypingInterval = 500;
+
+     $(document).ready(function () {
+         $("#txtxbuscar").keyup(function () {
+             debugger;
+             //alert(sessionValue);      
+             clearTimeout(typingTimer);
+             if ($('#txtxbuscar').val) {
+                 typingTimer = setTimeout(buscar, doneTypingInterval);
+             }
+         });
+
+
+     });
+
+     function muestraVistosSinLogueo(cantidad, objeto) {
+         listaVistosSinlogueo();
+         //alert($(event).html());
+//         var cant2 = $("#numVistos").text();
+//         if (cant2 == 0) {
+//             $(objeto).removeAttr("data-target");
+//         }
+//         if (cantidad > 0 && $("#numVistos").text() > 0) {
+//             listaVistosSinlogueo();
+//         } else {
+//            return;
+//         }         
+     }
+
+     function listaVistosSinlogueo() {
+         $.post("/ajax/vistos_recientemente_ajax.aspx", {
+             vaccion: 'listarVistos'
+         }, function (data) {
+             //alert(data);
+             $("#VistosRecientementeSinlogeo").html(data);
+         });
+     }
+
+     function eliminaritemVistosSinlogueo(i) {
+         //alert(i);
+         $.post("/ajax/vistos_recientemente_ajax.aspx", {
+             vaccion: 'EliminaItem',
+             vindex: i
+         }, function (data) {
+             $("#numVistos").text(data);
+             listaVistosSinlogueo();
+
+             if (parseInt(data) == 0) {
+                 $("#contenedorVistos").html("");
+             }
+         });
+     }
+     
+
+     function buscar() {
+         var input = $("#txtxbuscar").val().toLowerCase();
+
+         if (input == '') {
+             $(".resultIntui").html("");
+             return false;
+         }
+         if (input.length <= 2) {
+             $(".resultIntui").html("");
+             return false;
+         }
+
+
+         $.ajax({
+             type: "POST",
+             url: "/ajax/busquedas_cabecera_json.aspx/GetProducts",
+             data: "{ 'textobuscar' : '" + input + "'}",
+             contentType: "application/json; charset=utf-8",
+             dataType: "json",
+             success: function (response) {
+
+                 var productos = (typeof response.d) == 'string' ?
+                                eval('(' + response.d + ')') :
+                                response.d;
+
+
+                 //indentificamos las categorias
+                 var unique = {};
+                 var Catedistinct = [];
+                 for (var i in productos) {
+                     if (typeof (unique[productos[i].DES_SUBCATEGORIA]) == "undefined") {
+                         Catedistinct.push({ DES_WEB_CAT: productos[i].DES_WEB_CAT, DES_WEB_SUBCAT: productos[i].DES_WEB_SUBCAT });
+                     }
+                     unique[productos[i].DES_SUBCATEGORIA] = 0;
+                 }
+                 //indentificamos las marcas
+                 var unique = {};
+                 var Marcadistinct = [];
+                 for (var i in productos) {
+                     if (typeof (unique[productos[i].DES_MARCA]) == "undefined") {
+                         Marcadistinct.push({ COD_MARCA: productos[i].COD_MARCA, DES_MARCA: productos[i].DES_MARCA });
+                     }
+                     unique[productos[i].DES_MARCA] = 0;
+                 }
+
+                 //alert("Categorias ==> " + Catedistinct.length + " : Marcas ==> " + Marcadistinct.length);
+
+                 var cadenaLista = "";
+                 var arryaCat = [];
+
+                 //base cate
+                 cadenaLista += "<ul>"
+                 //if (Catedistinct.length > 1) {
+                 for (var cat = 0; cat < Catedistinct.length; cat++) {
+                     var subcattext = Catedistinct[cat].DES_WEB_SUBCAT.replace(/\ /g, '-');
+                     //var resSubcattext = subcattext.replace(' ', '-');
+                     //alert(subcattext);
+                     cadenaLista += "<li>"
+                     cadenaLista +=  input + " en " + "<a style='font-weight:bold;' href='/" + Catedistinct[cat].DES_WEB_CAT + "/" + subcattext + "" + "?DESCRIPCION=" + input + "'>" + Catedistinct[cat].DES_WEB_SUBCAT + "<a>";
+                     cadenaLista += "</li>"
+                 }
+
+                 cadenaLista += "<li>"
+                 cadenaLista += "<a href='/todas/" + input + "' style='color:#00a2e0'>" + input + " en todas las categorias </a>";
+                 cadenaLista += "</li>"
+
+
+                 cadenaLista += "</ul>"
+                 cadenaLista += "<hr style='margin:5px 0;' />"
+
+
+                 //base marcas
+                 cadenaLista += "<ul>"
+                 for (var mar = 0; mar < Marcadistinct.length; mar++) {
+                     cadenaLista += "<li>"
+                     cadenaLista += "<a href='/todas/" + input + "?ARRAY=" + Marcadistinct[mar].COD_MARCA + "' style='color: #067bb5; font-weight: bold;'>" + input + " " + " en " + Marcadistinct[mar].DES_MARCA + "<a>";
+                     cadenaLista += "</li>"
+                 }
+                 cadenaLista += "</ul>"
+
+                 var ancho = $("#txtxbuscar").width();
+                 $(".resultIntui").css({ "width": ancho + "px" });
+                 $(".resultIntui").html(cadenaLista);
+                 $(".resultIntui").show();
+
+                 $('.resultIntui').blur();
+
+             },
+             error: function (result) {
+                 return;
+                 alert('ERROR ' + result.status + ' ' + result.statusText);
+             }
+         }); 
+     }
+
+     </script>
+
+
+ <!--[if lte IE 9]>
+  <style type="text/css">
+#main {margin-top:100px;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+    function cerrar_ayudaAvanzada() {
+        document.getElementById('ayudaAvanzada').style.display = "none";
+        document.getElementById('oculta').style.display = "none";
+    }
+    function cerrar_ayudaContacto() {
+        document.getElementById('ayudaContacto').style.display = "none";
+        document.getElementById('oculta').style.display = "none";
+    }
+    function btnEntrar_onclick() {
+
+    }
+    function send() {
+        $('#txtcab_clave').keypress(function (e) {
+            if (e.which == 13) {
+                $('#btnEntrar').click();
+                return false;
+            }
+        });
+    }
+</script>
+<div class="barra_sup">
+<header id="header" class="container">
+    <div id="logo">
+    <a href="/">
+      <span class="shop_name trs_hover"><img src="http://www.mundotek.com/images/logo.png" class="logo_mundotek" alt="MUNDOTEK" width="220" height="62"></span>
+    </a>
+    </div>
+
+    <div class="sup_barra" style="position: relative; float: left;border-bottom: 0px solid #D3D3D3;text-align:left; padding-left:0px;color:#CCC;">
+        <a class="enlace_sup" href="/" style="padding:0">Inicio</a> | 
+        <a class="enlace_sup" href="/acerca-de-nosotros">¿Quiénes Somos?</a> |  
+        <a class="enlace_sup" href="/Ventas-Corporativas">Ventas Corporativas</a>  | 
+        <a class="enlace_sup" href="/servicioalcliente">Servicio al Cliente</a> | 
+        <a class="enlace_sup" href="/contactenos">Contáctenos</a> |
+        <a class="enlace_sup" href="/blog">Blogger</a>  | 
+        <span style="color:#FFF; margin-left:0;font-size: 90%;">
+            
+              <i class="fa fa-phone" style="line-height: 20px;"></i>&nbsp;(01) 271-0630 
+        </span> 
+        
+        <div class="dropdown" style="position:absolute;right:0;top:0;width:inherit">
+        <a href="#" class="dropdown-toggle enlace_sup Tiendacss" data-toggle="dropdown" role="button" aria-expanded="false" id="A3">
+                 <span>Tiendas Exclusivas</span><span class="caret" style="margin: 0px 6px;border-top: 4px solid #FFF;"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu" id="Ul2" style="max-width: 180px; top: 25px; right: 15px; width: 438px; margin-top: 0px; padding-top: 0px;">            
+            
+            <li>
+                <a href="/Tiendas" style="text-align:center;font-weight:bold;background-color:#F5F5F5;color: #00a2e0;">
+                    Todas las Tiendas
+                </a>
+            </li>
+            <li class="divider" style="margin:0px 0px;"></li>
+            <li>
+                <ul>
+                    <li style="float:left;max-width: 90px;width: 100%;">
+                        <a href="http://www.mundotek.com/Apple"><img style="border-radius:50%;width:80px;" src="http://www.mundotek.com/marcas/logos/apple.jpg" alt="Apple"></a>
+                    </li>
+                    <li style="float:left;max-width: 90px;width: 100%;">
+                        <a href="http://www.mundotek.com/D-link"><img style="border-radius:50%;width:80px;" src="http://www.mundotek.com/marcas/logos/dlink-logo.jpg" alt="D-link"></a>
+                    </li>
+                    <li style="float:left;max-width: 90px;width: 100%;">
+                        <a href="http://www.mundotek.com/hp"><img style="border-radius:50%;width:80px;" src="http://www.mundotek.com/marcas/logos/hp.jpg" alt="HP"></a>
+                    </li>
+                    
+                    <li style="float:left;max-width: 90px;width: 100%;">
+                        <a href="http://www.mundotek.com/Samsung"><img style="border-radius:50%;width:80px;" src="/marcas/samsung.jpg" alt="samsung"></a>
+                    </li>
+                    <!--<li style="float:left;max-width: 90px;width: 100%;">
+                        <a href="http://www.mundotek.com/dell"><img style="border-radius:50%;width:80px;" src="http://www.mundotek.com/marcas/logos/dell.jpg" alt="Dell"></a>
+                    </li>-->
+                </ul>
+            </li>
+            
+              
+        </ul>
+        </div>
+        
+        
+    </div>
+    <div id="slideCss" style="position: absolute;right:-50px;border-bottom: 0px solid #D3D3D3;text-align:right; padding-left:0px;padding-right:0;top: 25px;">
+        
+          
+        
+        <style>
+
+        nav ul, li{list-style:none}
+
+.slide-container{
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+.slide-container li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+}
+.slide {
+    width:55px;
+    height: 55px;
+    /*margin: 0px auto;*/
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+	/*position: fixed;*/
+	float:right;
+	/*margin-right:30px;*/
+	/*margin-left:10px;*/
+	display:inline;
+}
+
+.slide li img {
+    width:100%;
+    height: 100%;
+}
+
+.slide-tabs {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    margin-left: -44px;
+    z-index: 10;
+}
+
+.active {
+    z-index: 5;
+}
+.container3 {
+    height: auto;
+    width:auto;
+    /*padding-left:30px;*/
+	/*padding-right:100px;*/
+	/*margin-right:40px;*/
+	
+    overflow: hidden;
+    position: relative;
+	
+}
+
+
+
+.slide2{
+color:#FFF;
+margin-right:100px;
+padding-right:50px;
+}
+
+.slide-container2{
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+	float:left;
+	margin-right:100px;
+padding-right:100px;
+}
+
+.slide-container2 li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+	right:40px;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+	margin-right:100px;
+padding-right:100px;
+}
+
+.slide2 li {
+    width:100%;
+    height: 100%;
+	margin-right:100px;
+padding-right:100px;
+}
+
+		</style>        
+      
+        <div class="container3">       
+         <!--
+        
+                <div style="display:inline; color:#FFF; margin-right:0px; text-align:center; padding-top:58px; font-size:11.5px; font-weight:bold; font-family:'Arial', Helvetica, sans-serif;">
+                    <a href="http://www.mundotek.com/tiendas" style="color:#FFF;">Tiendas Exclusivas:</a>
+                </div>
+
+                -->
+               <div class="slide">   
+                    <ul class="slide-container" style="position: relative;">
+                        <li style="display: block; opacity: 1;">
+                            <a href="http://www.mundotek.com/Apple"><img style="border-radius:50%;" src="http://www.mundotek.com/marcas/logos/apple.jpg" alt="Apple"></a>
+                        </li>
+                        <li style="opacity: 0; display: none;">
+                            <a href="http://www.mundotek.com/D-link"><img style="border-radius:50%;" src="http://www.mundotek.com/marcas/logos/dlink-logo.jpg" alt="D-link"></a>
+                        </li>
+                        <li style="opacity: 0; display: none;">
+                            <a href="http://www.mundotek.com/hp"><img style="border-radius:50%;" src="http://www.mundotek.com/marcas/logos/hp.jpg" alt="HP"></a>
+                        </li>
+                        <li style="opacity: 0; display: none;">
+                            <a href="http://www.mundotek.com/dell"><img style="border-radius:50%;" src="http://www.mundotek.com/marcas/logos/dell.jpg" alt="Dell"></a>
+                        </li>
+                    </ul>
+                <a href="javascript:;" class="ctrl-slide prev"></a><a href="javascript:;" class="ctrl-slide next"></a><ul class="slide-tabs"><li style="opacity: 1;"><a href="#" class="slide-a"></a></li><li style="opacity: 0.7;"><a href="#" class="slide-a"></a></li><li style="opacity: 0.7;"><a href="#" class="slide-a"></a></li><li style="opacity: 0.7;"><a href="#" class="slide-a"></a></li></ul></div>
+        </div>
+        
+        
+        <!--
+        <a class="enlace_sup" href="/Apple">
+            <img style="max-width:26px;border-radius:50%;" src="/marcas/logos/apple.jpg" />            
+        </a>
+        <a class="enlace_sup" href="/dlink">
+            <img style="max-width:26px;border-radius:50%;" src="/marcas/logos/dlink-logo.jpg" />            
+        </a>
+        <a class="enlace_sup" href="/hp">
+            <img style="max-width:26px;border-radius:50%;" src="/marcas/logos/hp.jpg" />            
+        </a>
+        <a class="enlace_sup" href="/dell">
+            <img style="max-width:26px;border-radius:50%;" src="/marcas/logos/dell.jpg" />            
+        </a>
+        -->
+        
+        
+
+    </div>
+    
+ 
+    
+
+
+
+    
+    <script type="text/javascript" class="library" src="http://www.jqueryscript.net/demo/Full-width-Automatic-jQuery-Image-Carousel-Plugin-slide-js/slide.js"></script>
+    <script type="text/javascript">
+        $('.slide').slide({
+            start:true,
+            speed:4000,
+            animate: 'opacity'
+        })
+	
+    </script>
+
+<div class="header_search">
+            <input id="txtxbuscar" name="Buscar" placeholder="Buscar por Descripción, Marca ó Categoría" class="form-control removeIECross" style="font-size:90%;">
+       
+        <div class="resultIntui" style="text-transform:uppercase;font-size:11px;color:#000;">
+            <ul>
+                <li>
+                    <a href="#">Producto 1</a>
+                </li>
+                <li>
+                    <a href="#">Producto 2</a>
+                </li>
+                <li>
+                    <a href="#">Producto 3</a>
+                </li>
+            </ul>
+        </div>    
+        <button id="search-submit" type="button"><i class="fa fa-search"></i></button>
+</div>
+
+<ul class="nav navbar-nav menusuperior" id="login_cart">
+            <li class="dropdown" style="height: 28px; border-radius: 0px; background-color: transparent;">
+                                
+            
+            <a href="#" class="dropdown-toggle texto_blanco" data-toggle="dropdown" role="button" aria-expanded="false" id="A1" style="height:28px;padding: 6px 10px !important;">
+                <i class="fa fa-globe" style="font-size:150%; color:#fff;margin-right: 2px;"></i>
+                <span>MundOfertas</span><span class="caret" style="margin: 0px 6px;"></span>
+            </a>                
+                
+               <ul class="dropdown-menu" role="menu" id="Ul2" style="max-width: 200px; width: 438px;">
+                 <li><a href="/mundofertas">MundOfertas</a></li>
+                 <li><a href="/cupones">Cupones</a></li>
+                               
+               </ul>
+
+            
+            </li>
+			<!--USUARIO-->            
+            
+
+            <li class="dropdown" style="height:28px;    border-right: solid 1px #5C8C96;">
+                                
+            
+            <a href="#" class="dropdown-toggle texto_blanco" data-toggle="dropdown" role="button" aria-expanded="false" id="tipo_nivel" style="height:28px;padding: 6px 10px !important;">
+                <i class="fa fa-user" style="font-size:150%; color:#fff;"></i> <span>Iniciar Sesión</span><span class="caret" style="margin: 0px 6px;"></span></a>
+                
+                <ul class="dropdown-menu" role="menu" id="Ul1" style="max-width: 198px; width: 438px;">
+                <li style="border-radius: 0px; background-color: transparent;text-align: center;font-size: 12px; font-weight: 700;">
+                <a href="http://www.mundotek.com/secure/mi_cuenta.aspx" class="pcboton azul ver_carrito verde_deg" style="margin: auto auto; font-weight: 700;color: #fff;margin: 10px 4px;display: inherit;background:#e50058;">Iniciar Sesion</a>
+                </li>
+                 <li class="divider" style="margin:6px 0px;"></li>
+                 <li><a href="http://www.mundotek.com/secure/mi_cuenta.aspx"><i class="fa fa-facebook-square" style="font-size: 16px; margin-right: 8px;height:18px; vertical-align: middle;"></i>Iniciar Sesion vía Facebook</a></li>
+                 <li class="divider" style="margin:6px 0px;"></li>
+                 <li><a href="/secure/mi_cuenta.aspx"><i class="fa fa-user" style="font-size: 16px; margin-right: 8px;"></i>Mi Cuenta</a></li>
+                 <li><a href="/secure/misfavoritos.aspx"><i class="fa fa-heart" style="font-size: 16px; margin-right: 8px;"></i>Mis Favoritos</a></li>
+                 <li><a href="/secure/misvistos.aspx"><i class="fa fa-eye" style="font-size: 16px; margin-right: 8px;"></i>Vistos Recientemente</a></li>
+                 <li><a href="/secure/mis-pedidos"><i class="fa fa-file-text" style="font-size: 16px; margin-right: 8px;"></i>Mis Pedidos</a></li>   
+                </ul>
+
+            
+            </li>
+
+            
+
+
+            <li style="border-radius: 0px; background-color: transparent; border:0">
+              <a href="http://www.mundotek.com/secure/mi_cuenta.aspx" class="texto_blanco" role="button" aria-expanded="false" style="height:28px;padding: 6px 10px !important;">
+			  <i class="fa fa-heart" style="font-size:150%; color:#fff;margin-right: 2px;"></i>
+             
+              <span>0</span>
+              </a>
+            </li>
+
+             
+            
+
+			<!--CARRITO-->   
+                     
+            <li class="dropdown " id="menuCarro">
+              <a href="#" class="dropdown-toggle texto_blanco" data-toggle="dropdown" role="button" aria-expanded="false" style="height:28px;padding: 6px 10px !important;">
+			  <i class="fa fa-shopping-cart" style="font-size:150%; color:#fff;margin-right: 2px;"></i> <span id="cantArticulos">0 Productos</span><span class="caret" style="margin: 0px 6px;"></span>
+              </a>
+             
+              
+              <ul class="dropdown-menu" role="menu" id="previa_items" style="max-width: 270px !important; width: 438px;">
+                <li style="width:100%">
+                <div id="Div1">
+                                    
+                                    <div id="Div2">
+                                        <div class="minilista" style="margin-left: auto; margin-right: auto; text-align:left">
+                                        <span style="color:#1b2b67;text-align: center;margin: auto auto;display: block;">Tu carrito de compras está vacío.</span>
+                                        </div>
+                                    </div>
+                                    <div style="margin:10px; margin-left: auto; margin-right: auto; width:140px;">
+                                    <a href="/carrito" class="pcboton azul ver_carrito verde_deg" style="font-weight: 700; line-height: 15px; color: #fff; margin: 10px auto; display: block; vertical-align: middle;padding: 8px 15px;max-height: 30px;text-transform: uppercase;background:#e50058;" data-original-title="" title="">
+                                    Comprar</a>
+                                    </div>                  
+                                </div>  
+                </li>
+              </ul>
+            </li>           
+            
+          </ul>
+
+
+
+
+</header>
+<div class="col-sm-12 gradient5" style="background: #0058b3;min-height:40px;">
+<div class="navigation_content container" style="background: #0058b3;">
+
+
+
+
+
+<nav id="ddmenu">
+    <div class="menu-icon" tabindex="0" style="z-index: 91;"></div>
+
+    <ul>
+        <li class="full-width mundofertas" tabindex="0" style="z-index: 1; background:#e50056; line-height:40px;">
+            <!--<a class="top-heading ofertamenu" href="/mundofertas" style="color: #fff; /*font-family: Impact;  font-size:14px;*/text-transform: uppercase;" data-original-title="" title="">MundOfertas</a>-->
+            <a class="top-heading ofertamenu" href="http://www.mundotek.com/infopartners" style="color: #fff; /*font-family: Impact;  font-size:14px;*/font-weight:bold;line-height:40px" data-original-title="" title="">
+                Servicio Técnico
+            </a>			
+        </li>
+
+
+                        
+                            <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/notebooks" data-original-title="" title="">Notebooks</a></span> 
+			                    <i class="caret"></i>           
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;max-width: 480px;">
+                                    <div class="dd-inner">
+                                        <div class="column" style="text-align: center;width: 40%;">
+                                            <a href="/notebooks" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/items/compaq%201.jpg" style="padding: 20px;width: 95%;" alt="Notebooks"></a>
+                                        </div>
+                                        <div class="column">
+											<a href="/notebooks" class="titulo_cat_menu">Notebooks</a>   
+                                            <a href="/notebooks/notebook-empresa" class="link" data-original-title="" title="">Notebook Empresa</a>
+                                            <a href="/notebooks/notebook-hogar" class="link" data-original-title="" title="">Notebook Hogar</a>
+                                            <a href="/notebooks/macbook-apple" class="link" data-original-title="" title="">MacBook Apple</a>
+                                        </div>      
+                                        <div class="column">  
+											<a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>   
+                                            <a href="/Apple?CODCAT=006&amp;CATEGORIA=Notebooks" class="link" data-original-title="" title="">Apple</a>
+                                            <a href="/HP?CODCAT=006&amp;CATEGORIA=Notebooks" class="link" data-original-title="" title="">HP</a>
+                                            <a href="/Toshiba?CODCAT=006&amp;CATEGORIA=Notebooks" class="link" data-original-title="" title="">Toshiba</a>
+                                            <a href="/Dell?CODCAT=006&amp;CATEGORIA=Notebooks" class="link" data-original-title="" title="">Dell</a>
+                                            <a href="/Lenovo?CODCAT=006&amp;CATEGORIA=Notebooks" class="link" data-original-title="" title="">Lenovo</a>
+                                        </div>                         
+                                    </div>                      
+                                </div>                                
+                            </li>
+                        
+                        <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/computadoras" data-original-title="" title="">Computadoras</a></span>
+			                    <i class="caret"></i>           
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;max-width: 480px;">
+                                    <div class="dd-inner">
+                                                   <div class="column" style="text-align: center;width: 40%;">
+                                                      <a href="/computadoras" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/items/a.jpg" style="padding: 20px;width: 95%;" alt="Computadoras"></a>
+                                                   </div>
+                                                    <div class="column">
+														<a href="/computadoras" class="titulo_cat_menu">Computadoras</a>   
+                                                        <a href="/computadoras/all-in-one" class="link" data-original-title="" title="">All-in-One</a>
+                                                        <a href="/computadoras/Computadoras" class="link" data-original-title="" title="">Computadoras</a>
+                                                        <a href="/computadoras/imac-apple" class="link" data-original-title="" title="">iMac Apple</a>
+                                                    </div>                                                    
+                                                    <div class="column">
+											            <a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>   
+                                                        <a href="/Apple?CODCAT=002&amp;CATEGORIA=Computadoras" class="link" data-original-title="" title="">Apple</a>
+                                                        <a href="/HP?CODCAT=002&amp;CATEGORIA=Computadoras" class="link" data-original-title="" title="">HP</a>
+                                                        <a href="/Dell?CODCAT=002&amp;CATEGORIA=Computadoras" class="link" data-original-title="" title="">Dell</a>
+                                                        <a href="/Lenovo?CODCAT=002&amp;CATEGORIA=Computadoras" class="link" data-original-title="" title="">Lenovo</a>
+                                                    </div> 
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/tablets" data-original-title="" title="">Tablets</a></span>
+			                    <i class="caret"></i>           
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;max-width: 480px;">
+                                    <div class="dd-inner">
+                                      <div class="column" style="text-align: center;width: 40%;">
+  <a href="/tablets" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/items/APPLE_ME276E_A[1].jpg" style="padding: 20px;width: 62%;" alt="Tablets"></a>
+  </div>
+                                                   <div class="column">
+														<a href="/tablets" class="titulo_cat_menu">Tablets</a>   
+                                                        <a href="/tablets/tablets" class="link" data-original-title="" title="">Tablets</a>
+                                                        <a href="/tablets/ipads" class="link" data-original-title="" title="">iPads</a>
+                                                    </div>
+                                                    <div class="column">
+											            <a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>   
+                                                        <a href="/Apple?CODCAT=024&amp;CATEGORIA=Tablets" class="link" data-original-title="" title="">Apple</a>
+                                                        <a href="/Lenovo?CODCAT=024&amp;CATEGORIA=Tablets" class="link" data-original-title="" title="">Lenovo</a>
+                                                        <a href="/Samsung?CODCAT=024&amp;CATEGORIA=Tablets" class="link" data-original-title="" title="">Samsung</a>
+                                                        <a href="/Leotec?CODCAT=024&amp;CATEGORIA=Tablets" class="link" data-original-title="" title="">Leotec</a>
+                                                    </div> 
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/celulares" data-original-title="" title="">Celulares</a></span>
+			                    <i class="caret"></i>        
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;max-width: 480px;">
+                                    <div class="dd-inner">
+                                                    <div class="column" style="text-align: center;width: 40%;">
+                                                        <a href="/celulares" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/items/61wVdawOWwL._SX425_[1].jpg" style="padding: 20px;width: 80%;" alt="Celulares"></a>
+                                                    </div>
+                                                    <div class="column">
+														<a href="/Celulares" class="titulo_cat_menu">Celulares</a>   
+                                                        <a href="http://www.mundotek.com/Celulares/celulares-basicos" class="link" data-original-title="" title="">Celulares Básicos</a>
+                                                        <a href="http://www.mundotek.com/Celulares/smartphones" class="link" data-original-title="" title="">Smartphones</a>
+                                                        <a href="http://www.mundotek.com/Celulares/accesorios-celulares" class="link" data-original-title="" title="">Accesorios Celulares</a>
+                                                    </div>
+                                                    <div class="column">
+											            <a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>   
+                                                        <a href="/Apple?CODCAT=025&amp;CATEGORIA=Celulares" class="link" data-original-title="" title="">Apple</a>
+                                                        <a href="/Samsung?CODCAT=025&amp;CATEGORIA=Celulares" class="link" data-original-title="" title="">Samsung</a>
+                                                        <a href="/Leotec?CODCAT=025&amp;CATEGORIA=Celulares" class="link" data-original-title="" title="">Leotec</a>
+                                                    </div> 
+                                        
+                                    </div>
+                                </div>                              
+                            </li>
+                        
+                            <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/impresoras" data-original-title="" title="">Impresoras</a></span>
+			                    <i class="caret"></i>           
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;max-width: 480px;">
+                                    <div class="dd-inner">
+                                                   <div class="column" style="text-align: center;width: 40%;">
+  <a href="/impresoras" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/items/3515%201.png" style="padding: 20px;width: 80%;" alt="Impresoras"></a>
+  </div>
+<div class="column">
+														<a href="/impresoras" class="titulo_cat_menu">Impresoras</a>   
+                                                        <a href="/impresoras/laser" class="link" data-original-title="" title="">Laser</a>
+                                                        <a href="/impresoras/multifuncionales" class="link" data-original-title="" title="">Multifuncionales</a>
+                                                    </div>
+                                                    <div class="column">
+											            <a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>   
+                                                        <a href="/HP?CODCAT=004&amp;CATEGORIA=Impresoras" class="link" data-original-title="" title="">HP</a>
+                                                    </div> 
+                                        
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/redes" data-original-title="" title="">Redes</a></span>
+			                    <i class="caret"></i>                                        
+                                <div class="dropdown uno" style="z-index: 2; top: 34px;right: 12.5%;left: inherit;width: 40%;">
+                                    <div class="dd-inner">
+                                                <div class="column" style="text-align: center;width: 40%;">
+                                                <a href="/impresoras" style="padding: 0px !important;"><img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/PORDLINKANTENAS.jpg" style="padding: 20px;width: 75%;" alt="Impresoras"></a>
+                                                </div>
+                                                <div class="column">
+														<a href="/redes" class="titulo_cat_menu">Redes</a>                                                           
+                                                        <a href="/redes/switches" class="link" data-original-title="" title="">Switches</a>
+                                                        <a href="/redes/routers" class="link" data-original-title="" title="">Routers</a>
+                                                        <a href="/redes/accesorios-de-red" class="link" data-original-title="" title="">Accesorios de Redes</a>
+                                                        <a href="/redes/opciones-de-red" class="link" data-original-title="" title="">Opciones de Red</a>
+
+                                                </div>
+                                                
+                                                <div class="column">
+											            <a href="#" class="titulo_cat_menu" style="text-decoration:none;">Marcas Exclusivas</a>                                                           
+                                                        <a href="/D-link" class="link" data-original-title="" title="">D-Link</a>
+                                                </div> 
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        
+                            
+                        
+                        <li class="full-width" tabindex="0" style="z-index: 1;">
+                                <span class="top-heading" aria-haspopup="true"><a href="/accesorios" data-original-title="" title="">Más</a></span>
+			                    <i class="caret"></i>           
+                                <div class="dropdown mas" style="z-index: 2; top: 34px;right: 0 !important;left: inherit;">
+                                    <div class="dd-inner">                                         
+                                             
+                                                   <div class="column">
+                                                    <a href="http://www.mundotek.com/accesorios" style="color: #10218b;font-weight: 500; line-height: 1.1; margin-top: 12px; margin-bottom: 8px; font-size: 20px; text-transform: uppercase;">Accesorios</a>   
+                                                    <a href="/accesorios/accesorios-varios" class="link" data-original-title="" title="">Accesorios Varios</a>
+                                                    <a href="/accesorios/camaras-ip" class="link" data-original-title="" title="">Cámaras IP</a>
+                                                    </div>
+
+                                                   <div class="column">
+                                                    <a href="http://www.mundotek.com/software" style="color: #10218b;font-weight: 500; line-height: 1.1; margin-top: 12px; margin-bottom: 8px; font-size: 20px; text-transform: uppercase;">Software</a>
+                                                    <a href="/software/software-aplicativo" class="link" data-original-title="" title="">Software Aplicativo</a>
+                                                    <a href="/software/antivirus" class="link" data-original-title="" title="">Antivirus</a>
+                                                    </div> 
+                                                                                                      
+                                    </div>
+                                    <br>
+                                    <!--<div class="dd-inner">-->    
+                                                    <div class="row"></div>                                     
+                                                   <div style="text-align:center;padding: 2px 5px;">
+                                                        <a href="#" style="color: #10218b;font-weight: 500; line-height: 1.1; margin-top: 12px; margin-bottom: 8px; font-size: 20px; text-transform: uppercase;display:block;">
+                                                            MARCAS EXCLUSIVAS
+                                                        </a>
+                                                   </div> 
+                                                   <div class="column">            
+                                                        <a href="/APPLE?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">Apple</a>
+                                                        <a href="/D-link" class="link" data-original-title="" title="">D-Link</a>
+                                                        <a href="/HP?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">HP</a>
+                                                        <a href="/Toshiba?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">Toshiba</a>
+                                                        <a href="/Dell?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">Dell</a>
+                                                        <a href="/Lenovo?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">Lenovo</a>
+                                                        <a href="/Samsung?CODCAT=001&amp;CATEGORIA=Accesorios|" class="link" data-original-title="" title="">Samsung</a>
+                                                        <a href="/Leotec?CODCAT=001&amp;CATEGORIA=Accesorios" class="link" data-original-title="" title="">Leotec</a>
+                                                    </div>
+
+                                                    <!--<div class="column">                                                    
+                                                        <a href="/software/software-aplicativo" class="link" data-original-title="" title="">Microsoft Corp</a>
+                                                        <a href="/software/antivirus" class="link" data-original-title="" title="">MCAFFE</a>
+                                                    </div>-->
+                                    <!--</div>-->
+                                </div>
+                                
+                            </li>
+
+        
+        
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+    
+</div>
+</div>
+</div>
+<div id="apaguen"></div>
+<div class="clearfix"></div>
+<div class="oculta" id="oculta" style="height: auto; width: 100%;"></div>
+<div id="ayudaContacto" class="content-form-ayuda" style="margin: 90px 754.5px;">
+        <img alt="cerrar" src="/img/cerrar.png" width="35" height="34" style="position:absolute;top:-15px;right:-15px;cursor:pointer;" class="cerrarayuda" onclick="cerrar_ayudaContacto();">
+                <table style="border:0; width:100%;">
+                    <tbody><tr>
+                        <td style="width:100%;">
+                            <h1 id="titulo" style="text-align:center; font-size:24px; line-height:30px; padding: 10px;">Contáctanos</h1>
+                            <br>
+                            <div>
+                                <h4 style="font-size:15px;">Nombres</h4>
+                                <input type="text" id="txtnombrecorreo" class="input" style="width:95%; padding:4px" value="">                               
+                            </div>
+                            <br>
+                            <div>
+                                <h4 style="font-size:15px;">Apellidos</h4>
+                                <input type="text" id="txtaperecorreo" class="input" style="width:95%; padding:4px" value="">                               
+                            </div>
+                            <br>
+                            <div>
+                                <h4 style="font-size:15px;">Email</h4>
+                                <input type="text" id="txtmailcorreo" class="input" style="width:95%; padding:4px" value="">  
+                            </div>
+                            <br>
+                            <div>
+                                <h4 style="font-size:15px;">Teléfono</h4>
+                                 <input type="text" id="txttelefonocorreo" class="input solonumeros" style="width:95%; padding:4px"> 
+                            </div>
+                            <br>
+                            <div>
+                                <h4 style="font-size:15px;">Consulta</h4>
+                                <textarea cols="5" rows="3" id="txtarea" class="input" style="width:95%; height:100px; text-transform:propercase; padding:4px"></textarea>
+                                <p id="mensaje"></p>
+                            </div>
+                            <br>
+                            <div>
+                                <input type="button" id="Btnenviarcorreo" value="Enviar">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody></table>
+</div>
+
+
+
+<div class="contenedor_izq" style="/*top:42%*/">
+
+
+<div class="sharing-container hidden-xs" id="contenedorVistos" style="margin-top: 82px;height: 120px;position: absolute;top: 0;">
+
+
+</div>
+
+<div class="sharing-container hidden-xs" style="margin-top:192px;height:130px;position:absolute;z-index:100">
+
+
+</div> 
+
+
+
+<div class="sharing-container hidden-xs" style="margin-top:0px;position:absolute;bottom:30%;">
+<a href="https://www.facebook.com/mundotek" target="_blank"><div class="sharing-item sharing-fb"></div></a>
+<a href="https://twitter.com/MundotekPeru" target="_blank"><div class="sharing-item sharing-tw"></div></a>
+<a href="https://plus.google.com/+Mundotek2" target="_blank"><div class="sharing-item sharing-gp"></div></a>
+<a href="https://www.linkedin.com/company/mundotek" target="_blank"><div class="sharing-item sharing-li"></div></a>
+<a href="http://www.mundotek.com/blog" target="_top"><div class="sharing-item sharing-bl"></div></a>
+</div>
+
+</div>
+
+<!-- Modal para Ultimos Vistos -->
+<div class="modal fade" id="modalVistos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document" style="max-width: 950px;">
+    <div class="modal-content">
+        <div class="modal-header gradient4" style="color: #fff; border-radius: 5px 5px 0 0;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 1;">
+        <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="H6">Vistos Recientemente</h4>
+        </div>                  
+        <div class="modal-body" style="padding:15px" id="VistosRecientementeSinlogeo">
+            Cargando...
+        </div>                  
+    </div>
+</div>
+</div>
+
+
+    <!-- Fin de Cabecera -->
+<!-- MAIN CONTENT -->
+<div id="main" role="main">     
+          
+<div class="container">
+           	
+<div class="col-sm-12" style="padding-top:10px;padding-bottom:10px;padding-left:0;padding-right:0">
+<!-- SLIDER -->
+
+
+
+                <div class="slider_wrap">
+                <div class="nivoSlider">
+                <a href="/mundofertas" class="nivo-imageLink" style="display: none;">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/plantilla%20banner%20web%2012.jpg" title="#htmlcaption-5" alt="Mas de 20 tiendas en un solo lugar" width="904" style="display: none;">
+                </a>
+                <a href="http://www.mundotek.com/producto/000000018385/notebook-hp-probook-655-g1-quad-core-a8-5550-2-10ghz-8gb-500gb-15-6-led-win-8-1" class="nivo-imageLink" style="display: none;">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/banner%202.png" title="#htmlcaption-3" alt="Equipos D-link" width="904" style="width: 1258px; visibility: hidden;">
+                </a>
+                <a href="http://www.mundotek.com/producto/000000018775/tablet-samsung-galaxy-tab-e-7-white-quad-core-1-3ghz-1gb-8gb-flash-2-0mp" class="nivo-imageLink" style="display: block;">
+                    <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" title="#htmlcaption-3" alt="Equipos HP" width="904" style="width: 1258px; visibility: hidden;">
+                </a>
+                <a href="/apple" class="nivo-imageLink" style="display: none;">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/toshiba.jpg" title="#htmlcaption-4" alt="Equipos Toshiba" width="904" style="display: none;">
+                </a>
+                <a href="http://www.mundotek.com/producto/000000019128/notebook-hp-star-wars-special-edition-15-an001la-intel-core-i5-6200u-6-gb-1-tb-15-6-windows-10" class="nivo-imageLink" style="display: none;">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/apple.jpg" title="#htmlcaption-5" alt="Equipos Apple" width="904" style="display: none;">
+                </a>
+                <img class="nivo-main-image" src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="display: inline; width: 1258px; height: 297px; overflow: hidden;"><div class="nivo-caption" style="display: block;">
+      	                <div class="nivo-caption-3">
+                        <a href="#">
+                        </a>
+    	                </div>
+                    </div><div class="nivo-slice" name="0" style="left: 0px; width: 1258px; height: 297px; opacity: 1; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-0px;"></div><div class="nivo-slice" name="1" style="left: 84px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-84px;"></div><div class="nivo-slice" name="2" style="left: 168px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-168px;"></div><div class="nivo-slice" name="3" style="left: 252px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-252px;"></div><div class="nivo-slice" name="4" style="left: 336px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-336px;"></div><div class="nivo-slice" name="5" style="left: 420px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-420px;"></div><div class="nivo-slice" name="6" style="left: 504px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-504px;"></div><div class="nivo-slice" name="7" style="left: 588px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-588px;"></div><div class="nivo-slice" name="8" style="left: 672px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-672px;"></div><div class="nivo-slice" name="9" style="left: 756px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-756px;"></div><div class="nivo-slice" name="10" style="left: 840px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-840px;"></div><div class="nivo-slice" name="11" style="left: 924px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-924px;"></div><div class="nivo-slice" name="12" style="left: 1008px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-1008px;"></div><div class="nivo-slice" name="13" style="left: 1092px; width: 84px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-1092px;"></div><div class="nivo-slice" name="14" style="left: 1176px; width: 82px; height: 297px; opacity: 0; overflow: hidden;"><img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./banners/hp.jpg" style="position:absolute; width:1258px; height:auto; display:block !important; top:0; left:-1176px;"></div></div><div class="nivo-controlNav gradient2"><a class="nivo-control" rel="0"><i class="fa fa-circle"></i><span>1</span></a><a class="nivo-control" rel="1"><i class="fa fa-circle"></i><span>2</span></a><a class="nivo-control active" rel="2"><i class="fa fa-circle"></i><span>3</span></a><a class="nivo-control" rel="3"><i class="fa fa-circle"></i><span>4</span></a><a class="nivo-control" rel="4"><i class="fa fa-circle"></i><span>5</span></a></div>
+                </div>
+
+
+
+    <!-- modal como comprar-->
+<!--               <div id='imagenFlotante' >
+                      <a href="#" style="display:none" class="abrir"><img onclick="liteModal.open('#lovato')" src="images/btncomp.png" id="mundo" style="height:180px;width:90px;margin-right:-14px;"></a>
+                  </div>
+
+                <div class="lite-modal" id="lovato">
+		<img src="img/popup.png" style="width: 100%;max-width: 790px; height:920px;margin-top:86px;margin-left:-50px">
+	</div> -->
+   
+
+
+
+    <!-- modal nuevo usuario -->    
+<!-- <div class="lite-modal" id="beiber" >
+				
+						<div class="contenedora">
+							<img src="images/mod1.png" style="position: absolute; top: -122px; left: -406px; width:1050px;max-width:1050px">
+							<div style="position: absolute; top: 14px; left: -378px; margin: 10px; width: 380px; color: white;font-size: 18px;">
+
+							
+							<p>Contamos con las marcas tecnológicas más reconocidas a nivel mundial y ponemos a tu disposición sólo productos de calidad.</p> 
+
+							<p>Obten hasta el <b>50%</b> de descuento en marcas exclusivas.Suscríbete y vive una experiencia de grandes ofertas para tu familia y trabajo  </p> 
+
+							    <br />
+                                <br/>
+
+							  <p style="font-size: 12px">Ya estoy registrado.Quiero ver <a href="http://www.mundotek.com/mundofertas" style="color: white"><u>Mundofertas</u></a> <a href="http://www.mundotek.com/secure/Login.aspx?ReturnUrl=%2fsecure%2fmi_cuenta.aspx"><img src="images/btnuevo.png" style="width: 140px;height: 40px;margin-top:-32px;margin-left:250px"> </a></p>
+							</div>
+                           </div>
+						</div> -->
+
+
+
+                <div class="caption_hidden">
+                    <div id="htmlcaption-3">
+      	                <div class="nivo-caption-3">
+                        <a href="#">
+                        </a>
+    	                </div>
+                    </div>
+                    <div id="htmlcaption-4">
+      	                <div class="nivo-caption-4">
+    	                </div>
+                    </div>
+                    <div id="htmlcaption-5">
+      	                <div class="nivo-caption-5">
+   		                </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(window).load(function () {
+                        $('.nivoSlider').nivoSlider({
+                            effect: 'fade',
+                            animSpeed: 500,
+                            pauseTime: 7000,
+                            startSlide: 0,
+                            pauseOnHover: true,
+                            directionNav: false,
+                            directionNavHide: false,
+                            controlNav: true
+                        });
+                    });
+                </script>
+
+
+
+        
+
+
+
+</div>
+    <div class="row sidebar_none">
+    <div class="column_center">
+
+    <div class="col-sm-12" style="overflow: hidden; padding: 0px;">
+
+        <div class="col-sm-3" style="text-align:center;z-index: 9">
+            <a href="http://www.mundotek.com/producto/000000018775/tablet-samsung-galaxy-tab-e-7-white-quad-core-1-3ghz-1gb-8gb-flash-2-0mp">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./portada/p1_2.jpg" style="width: inherit;" alt="tablet-samsung-galaxy-tab-e-7-white-quad-core-1-3ghz-1gb-8gb-flash-2-0mp">
+            </a>
+        </div>
+    
+        <div class="col-sm-3" style="text-align:center;z-index: 9">
+            <a href="http://www.mundotek.com/producto/000000018110/notebook-hp-14-r215la-intel-core-i3-4005u-4gb-500gb-14-led-hd-windows-8-1-64-bit">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./portada/p2_2.jpg" style="width: inherit;" alt="notebook-hp-14-r215la-intel-core-i3-4005u-4gb-500gb-14-led-hd-windows-8-1-64-bit">
+            </a>
+        </div>
+    
+        <div class="col-sm-3" style="text-align:center;z-index: 9">
+            <a href="http://www.mundotek.com/producto/000000014147/impresora-multifuncional-hp-deskjet-ink-advantage-3515-e-print-4800x1200dpi-20ppm-usb2-0">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=./portada/p3.png" style="width: inherit;" alt="computadora-aio-hp-proone-400-g1-intel-core-i5-4590t-4gb-1tb-19-5-windows-8-pro">
+            </a>
+        </div>
+    
+        <div class="col-sm-3" style="text-align:center;z-index: 9">
+            <a href="#">
+                <img src="http://www.mundotek.com/img_chico.aspx?maxsize=1338&amp;img=portada/p4_2.jpg" style="width: inherit;" alt="notebook-tablet-lenovo-miix-300-intel-atomz3735f-1-33ghz-2gb-32gb-10-1-camaras-2mp-y-5mp-win-8-1">
+            </a>
+        </div>
+
+    </div>
+
+
+    <div id="main_content" class="col-sm-12">
+    <div style="clear: both;"></div>
+<div style="border-bottom: 2px solid #0058b3;position: relative;z-index: 1;margin-bottom: 30px;">
+<div class="TituloCss">Oportunidades Mundotek</div>
+</div>
+<div class="index-scope">
+<!--INICIO DE  PORTADA-->
+
+            <div class="product-listing product-listing__index">                             
+                <div id="lista_item" class="row lastItem firstItem"><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-31%</div><div class="product_img"><a href="/producto/000000017207/tablet-aoc-7-arm-cortex-a9-dual-core-512mb-8gb-morado-android-4-2-d70j11-9b"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/MORADA.jpg" alt="Mundotek Tablets Notebooks Perú" title="Tablet aoc 7 arm cortex a9 dual core 512mb 8gb morado android 4.2 d70j11-9b"></a></div><div class="marca_prod">AOC</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000017207/tablet-aoc-7-arm-cortex-a9-dual-core-512mb-8gb-morado-android-4-2-d70j11-9b" title="Tablet aoc 7 arm cortex a9 dual core 512mb 8gb morado android 4.2 d70j11-9b">Tablet aoc 7" arm cortex a9 dual core 512mb 8gb ...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 249.00">S/. 249.00</span><span class="money" data-currency-usd="S/. 359.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 359.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-21%</div><div class="product_img"><a href="/producto/000000016828/powerline-d-link-500-dhp-w311av-wireless-n-mini-starter-500-mbps-10-100base-tx"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/dlink.jpg" alt="Mundotek Tablets Notebooks Perú" title="Powerline d-link 500 dhp-w311av wireless n mini starter 500 mbps 10/100base-tx"></a></div><div class="marca_prod">D-LINK</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000016828/powerline-d-link-500-dhp-w311av-wireless-n-mini-starter-500-mbps-10-100base-tx" title="Powerline d-link 500 dhp-w311av wireless n mini starter 500 mbps 10/100base-tx">Powerline d-link 500 dhp-w311av wireless n mini ...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 298.16">S/. 298.16</span><span class="money" data-currency-usd="S/. 379.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 379.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-33%</div><div class="product_img"><a href="/producto/000000017395/camara-ip-d-link-babycam-dcs-825l-wifi-802-11-b-g-n-2-4-ghz-720p-hd"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/cam%201.JPG" alt="Mundotek Tablets Notebooks Perú" title="Camara ip d-link babycam dcs-825l wifi 802.11 b/g/n 2.4 ghz 720p hd"></a></div><div class="marca_prod">D-LINK</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000017395/camara-ip-d-link-babycam-dcs-825l-wifi-802-11-b-g-n-2-4-ghz-720p-hd" title="Camara ip d-link babycam dcs-825l wifi 802.11 b/g/n 2.4 ghz 720p hd">Camara ip d-link babycam dcs-825l wifi 802.11 b/...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 539.00">S/. 539.00</span><span class="money" data-currency-usd="S/. 799.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 799.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="product_img"><a href="/producto/000000019156/computadora-aio-hp-pavilion-23-q145la-intel-core-i5-4590t-2-0ghz-8gb-2tb-dvd-rw-23-windows-10"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019156_img_1-4659150_1[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Computadora aio hp pavilion 23-q145la intel core i5 4590t 2.0ghz 8gb 2tb dvd-rw 23 windows 10"></a></div><div class="marca_prod">HP</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000019156/computadora-aio-hp-pavilion-23-q145la-intel-core-i5-4590t-2-0ghz-8gb-2tb-dvd-rw-23-windows-10" title="Computadora aio hp pavilion 23-q145la intel core i5 4590t 2.0ghz 8gb 2tb dvd-rw 23 windows 10">Computadora aio hp pavilion 23-q145la intel core...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 45,517.64">S/. 45,517.64</span><span class="money" data-currency-usd="S/. 4,999.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 4,999.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-49%</div><div class="product_img"><a href="/producto/000000014147/impresora-multifuncional-hp-deskjet-ink-advantage-3515-e-print-wireless-4800x1200dpi-20ppm-usb2-0"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/3515%201.png" alt="Mundotek Tablets Notebooks Perú" title="Impresora multifuncional hp deskjet ink advantage 3515 e-print wireless 4800x1200dpi 20ppm usb2.0"></a></div><div class="marca_prod">HP</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000014147/impresora-multifuncional-hp-deskjet-ink-advantage-3515-e-print-wireless-4800x1200dpi-20ppm-usb2-0" title="Impresora multifuncional hp deskjet ink advantage 3515 e-print wireless 4800x1200dpi 20ppm usb2.0">Impresora multifuncional hp deskjet ink advantag...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 101.37">S/. 101.37</span><span class="money" data-currency-usd="S/. 199.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 199.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-18%</div><div class="product_img"><a href="/producto/000000018385/notebook-hp-probook-655-g1-quad-core-a8-5550-2-10ghz-8gb-500gb-15-6-no-dvd-w8-1"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000018385_img_1-csm_Probook655_Teaser_ce0051b983[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Notebook hp probook 655 g1 quad core a8-5550 2.10ghz 8gb 500gb 15.6 no-dvd w8.1"></a></div><div class="marca_prod">HP</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000018385/notebook-hp-probook-655-g1-quad-core-a8-5550-2-10ghz-8gb-500gb-15-6-no-dvd-w8-1" title="Notebook hp probook 655 g1 quad core a8-5550 2.10ghz 8gb 500gb 15.6 no-dvd w8.1">Notebook hp probook 655 g1 quad core a8-5550 2.1...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 1,632.40">S/. 1,632.40</span><span class="money" data-currency-usd="S/. 1,999.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 1,999.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-10%</div><div class="product_img"><a href="/producto/000000019216/notebook-lenovo-ideapad-300-intel-celeron-n3050-1-60ghz-4gb-500gb-dvd-rw-14-hd-windows-10"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019216_img_1-lenovo_lenovo-ideapad-300-silver-notebook--14-inch-intel-core-i5-6200u-ram-4gb-hdd-500-gb-2-gb-ati-exo-pro-r5-m330-ddr3l-_full03.jpg" alt="Mundotek Tablets Notebooks Perú" title="Notebook lenovo ideapad 300 intel celeron n3050 1.60ghz 4gb 500gb dvd-rw 14hd windows 10"></a></div><div class="marca_prod">LENOVO</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000019216/notebook-lenovo-ideapad-300-intel-celeron-n3050-1-60ghz-4gb-500gb-dvd-rw-14-hd-windows-10" title="Notebook lenovo ideapad 300 intel celeron n3050 1.60ghz 4gb 500gb dvd-rw 14hd windows 10">Notebook lenovo ideapad 300 intel celeron n3050 ...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 1,432.02">S/. 1,432.02</span><span class="money" data-currency-usd="S/. 1,599.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 1,599.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-13%</div><div class="product_img"><a href="/producto/000000018282/tablet-samsung-galaxy-tab-e-9-6-android-4-4-1-5gb-8gb-1-3ghz-quad-core-color-negro"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000018282_img_1-portsam.jpg" alt="Mundotek Tablets Notebooks Perú" title="Tablet samsung galaxy tab e 9.6 android 4.4 1.5gb 8gb 1.3ghz quad-core color negro"></a></div><div class="marca_prod">SAMSUNG</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000018282/tablet-samsung-galaxy-tab-e-9-6-android-4-4-1-5gb-8gb-1-3ghz-quad-core-color-negro" title="Tablet samsung galaxy tab e 9.6 android 4.4 1.5gb 8gb 1.3ghz quad-core color negro">Tablet samsung galaxy tab e 9.6" android 4.4 1.5...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 803.70">S/. 803.70</span><span class="money" data-currency-usd="S/. 929.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 929.00</span></div></div><div class="product product__product-grid-item columns-3 col-sm-4 flexible-item" itemscope=""><div class="etiqueta_oferta">-19%</div><div class="product_img"><a href="/producto/000000018126/tablet-samsung-galaxy-tab-a-8-0-android-5-0-2gb-16gb-quad-core-1-2-ghz-color-blanco"><img itemprop="image" src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/SMP350NZWAPEO.png" alt="Mundotek Tablets Notebooks Perú" title="Tablet samsung galaxy tab a 8.0 android 5.0 2gb 16gb quad-core 1.2 ghz color blanco"></a></div><div class="marca_prod">SAMSUNG</div><div class="product_name itemnom" itemprop="name"><a href="/producto/000000018126/tablet-samsung-galaxy-tab-a-8-0-android-5-0-2gb-16gb-quad-core-1-2-ghz-color-blanco" title="Tablet samsung galaxy tab a 8.0 android 5.0 2gb 16gb quad-core 1.2 ghz color blanco">Tablet samsung galaxy tab a 8.0" android 5.0 2gb...</a></div><div class="product_price"><span class="money" data-currency-usd="S/. 811.36">S/. 811.36</span><span class="money" data-currency-usd="S/. 999.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 999.00</span></div></div></div>
+            </div>
+            <div class="coleccion-item-inner">                               
+               <div id="lista_item_2" class="lista-flexible">    
+               </div>  
+            </div>
+<!--FIN DE  PORTADA-->
+<div style="border-bottom: 2px solid #0058b3;position: relative;z-index: 1;margin-bottom: 30px;">
+<div class="TituloCss">LO ÚLTIMO EN MUNDOTEK</div>
+</div>
+<div class="product-listing product-listing__index">
+			<div class="jcarousel-wrapper">
+                <div class="jcarousel" id="carrusel_oportunidades" data-jcarousel="true" data-jcarouselautoscroll="true">
+                 <ul id="carruselSimple" style="left: -1861.96px; top: 0px;">  
+                
+                    
+        
+                    
+        
+                    
+        
+                    
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+            <div class="etiqueta_oferta">
+            -17%
+            </div>
+                                                    
+        
+    <div class="product_img">  
+        <a href="/producto/000000019128/notebook-hp-star-wars-special-edition-15-an001la-intel-core-i5-6200u-6-gb-1-tb-15-6-windows-10">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019128_img_1-195034-MK18337A[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Notebook hp star wars special edition 15-an001la intel core i5-6200u 6 gb 1 tb 15.6' windows 10">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    HP
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019128/notebook-hp-star-wars-special-edition-15-an001la-intel-core-i5-6200u-6-gb-1-tb-15-6-windows-10">Notebook hp star wars special edition 15-an001la ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 2,972.94">S/. 2,972.94</span>
+        
+        
+        <span class="money" data-currency-usd="S/. 3,599.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 3,599.00</span>
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+            <div class="etiqueta_oferta">
+            -23%
+            </div>
+                                                    
+        
+    <div class="product_img">  
+        <a href="/producto/000000019153/computadora-aio-hp-20-e001la-amd-e1-6010-1-35-ghz-2gb-500gb-dvd-rw-19-5-windows-10">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019153_img_1-pc-all-in-one-hp-20-e001la-amd-e1-6010-2gb-500gb-195-w10[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Computadora aio hp 20-e001la amd e1-6010 1.35 ghz 2gb 500gb dvd-rw 19.5' windows 10">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    HP
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019153/computadora-aio-hp-20-e001la-amd-e1-6010-1-35-ghz-2gb-500gb-dvd-rw-19-5-windows-10">Computadora aio hp 20-e001la amd e1-6010 1.35 gh ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 1,469.00">S/. 1,469.00</span>
+        
+        
+        <span class="money" data-currency-usd="S/. 1,899.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 1,899.00</span>
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+            <div class="etiqueta_oferta">
+            -11%
+            </div>
+                                                    
+        
+    <div class="product_img">  
+        <a href="/producto/000000019137/smartphone-samsung-galaxy-j5-sm-j500m-lte-8-gb-13mp-android-desbloqueado-negro">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019137_img_1-532211-MLV20522981631_122015-O.jpg" alt="Mundotek Tablets Notebooks Perú" title="Smartphone samsung galaxy j5 - sm-j500m lte 8 gb 13mp android desbloqueado - negro">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    SAMSUNG
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019137/smartphone-samsung-galaxy-j5-sm-j500m-lte-8-gb-13mp-android-desbloqueado-negro">Smartphone samsung galaxy j5 - sm-j500m lte 8 gb ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 889.00">S/. 889.00</span>
+        
+        
+        <span class="money" data-currency-usd="S/. 999.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 999.00</span>
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+    <div class="product_img">  
+        <a href="/producto/000000019192/smartphone-samsung-galaxy-s6-5-1-32gb-4g-lte-android-5-0-desbloqueado-gold">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019192_img_1-s6-gold.jpg" alt="Mundotek Tablets Notebooks Perú" title="Smartphone samsung galaxy s6 5.1' 32gb 4g lte android 5.0 desbloqueado - gold">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    SAMSUNG
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019192/smartphone-samsung-galaxy-s6-5-1-32gb-4g-lte-android-5-0-desbloqueado-gold">Smartphone samsung galaxy s6 5.1" 32gb 4g lte an ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 2,002.41">S/. 2,002.41</span>
+        
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+    <div class="product_img">  
+        <a href="/producto/000000019219/notebook-toshiba-satellite-c45-c4201s-intel-celeron-n3050-1-60ghz-4gb-500gb-dvd-rw-14-windows-8">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019219_img_1-laptop-satellite-c45-c4201s.jpg" alt="Mundotek Tablets Notebooks Perú" title="Notebook toshiba satellite c45-c4201s intel celeron n3050 1.60ghz 4gb 500gb dvd-rw 14' windows 8">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    TOSHIBA
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019219/notebook-toshiba-satellite-c45-c4201s-intel-celeron-n3050-1-60ghz-4gb-500gb-dvd-rw-14-windows-8">Notebook toshiba satellite c45-c4201s intel cele ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 1,432.02">S/. 1,432.02</span>
+        
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+                    <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+            <div class="etiqueta_oferta">
+            -11%
+            </div>
+                                                    
+        
+    <div class="product_img">  
+        <a href="/producto/000000017790/notebook-lenovo-thinkpad-x240-intel-core-i7-4600u-2-10ghz-4gb-ddr3-256gb-ssd-12-5-hd-win-8-1-pro">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000017790_img_1-x240%201.png" alt="Mundotek Tablets Notebooks Perú" title="Notebook lenovo thinkpad x240 intel core i7-4600u 2.10ghz 4gb ddr3 256gb ssd 12.5' hd win 8.1 pro">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    LENOVO
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000017790/notebook-lenovo-thinkpad-x240-intel-core-i7-4600u-2-10ghz-4gb-ddr3-256gb-ssd-12-5-hd-win-8-1-pro">Notebook lenovo thinkpad x240 intel core i7-4600 ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 3,548.25">S/. 3,548.25</span>
+        
+        
+        <span class="money" data-currency-usd="S/. 3,999.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 3,999.00</span>
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li>
+        
+            <li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+    <div class="product_img">  
+        <a href="/producto/000000019157/apple-ipad-mini-4-7-9-wifi-128gb-space-gray">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019157_img_1-Apple-ipad-mini4-wifi-space-gray[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Apple ipad mini 4 7.9' wifi 128gb - space gray">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    APPLE
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019157/apple-ipad-mini-4-7-9-wifi-128gb-space-gray">Apple ipad mini 4 7.9" wifi 128gb - space gray ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 2,706.35">S/. 2,706.35</span>
+        
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li><li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+    <div class="product_img">  
+        <a href="/producto/000000019180/nuevo-apple-tv-cuarta-generacion-a8-dual-core-de-64-bits-32gb-wifi-mimo-control-touch-bluetooth-4-0">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019180_img_1-1000195179_x2[1].jpg" alt="Mundotek Tablets Notebooks Perú" title="Nuevo apple tv cuarta generacion a8 dual core de 64 bits 32gb wifi mimo+control touch bluetooth 4.0">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    APPLE
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019180/nuevo-apple-tv-cuarta-generacion-a8-dual-core-de-64-bits-32gb-wifi-mimo-control-touch-bluetooth-4-0">Nuevo apple tv cuarta generación a8 dual core de ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 725.07">S/. 725.07</span>
+        
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li><li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+    <div class="product_img">  
+        <a href="/producto/000000019197/iphone-6s-4-7-16-gb-desbloqueado-rose-gold">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/000000019197_img_1-v2-78136-11_large.jpg" alt="Mundotek Tablets Notebooks Perú" title="Iphone 6s 4.7' 16 gb desbloqueado - rose gold">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    APPLE
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000019197/iphone-6s-4-7-16-gb-desbloqueado-rose-gold">Iphone 6s 4.7" 16 gb desbloqueado - rose gold ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 3,194.86">S/. 3,194.86</span>
+        
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li><li style="width: 315.05px;">
+<div class="product product__product-grid-item columns-4">
+        
+            <div class="etiqueta_oferta">
+            -17%
+            </div>
+                                                    
+        
+    <div class="product_img">  
+        <a href="/producto/000000018540/tablet-hp-pro-10ee-g1-intel-atom-z3735f-1-33-ghz-2gb-msd-32gb-10-1-led-2mp-5mp-win8-1pro">	
+        
+        <img src="http://www.pcperformance.com.pe/intranet/img/img_chico.aspx?maxsize=155&amp;img=items/img_1-c04511570_1560x1144.jpg" alt="Mundotek Tablets Notebooks Perú" title="Tablet hp pro 10ee g1 intel atom z3735f 1.33 ghz 2gb msd 32gb 10.1' led 2mp 5mp win8.1pro">
+          
+        </a>
+    </div>
+    <div class="marca_prod">
+    HP
+    </div>
+    <div class="product_name">
+        <a href="/producto/000000018540/tablet-hp-pro-10ee-g1-intel-atom-z3735f-1-33-ghz-2gb-msd-32gb-10-1-led-2mp-5mp-win8-1pro">Tablet hp pro 10ee g1 intel atom z3735f 1.33 ghz ...</a>
+    </div>
+    
+    <div class="product_price">
+        <span class="money" data-currency-usd="S/. 1,073.47">S/. 1,073.47</span>
+        
+        
+        <span class="money" data-currency-usd="S/. 1,299.00" style="text-decoration:line-through; color:#555555; font-size:13px; display:block">S/. 1,299.00</span>
+        
+
+    </div>
+    <!--<button type="button" class="btn-sm btn-success gradient3" style="margin: auto auto; display: inherit; margin-top:8px;">Comprar</button>-->
+ 
+</div>
+                     </li></ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">&nbsp;</a>
+                <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">&nbsp;</a>
+                <p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="#1" class="active">1</a><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5" class="">5</a><a href="#6" class="">6</a><a href="#7" class="">7</a><a href="#8" class="">8</a><a href="#9" class="">9</a><a href="#10" class="">10</a></p>
+            </div>
+</div>   
+</div>
+</div>
+
+    <div style="border-bottom: 2px solid #0058b3;position: relative;z-index: 1;margin-bottom: 30px;">
+<div class="TituloCss">Tiendas Exclusivas</div>
+</div>
+
+    <div class="">
+
+<div class="col-sm-1 marca_logo">
+</div>
+
+<div class="col-sm-1 marca_logo">
+    <a href="/apple" style="border:0;text-decoration:none;"><img src="/marcas/apple.jpg" alt="Tienda apple" class="cssImgMarca"></a>
+</div>
+<div class="col-sm-1 marca_logo">
+    <a href="/hp" style="border:0;text-decoration:none;"><img src="/marcas/hp.jpg" alt="Tienda HP" class="cssImgMarca"></a>
+</div>
+<div class="col-sm-1 marca_logo">
+    <a href="/D-link" style="border:0;text-decoration:none;"><img src="/marcas/dlink.jpg" alt="Tienda Dlink" class="cssImgMarca"></a>
+</div>
+<div class="col-sm-1 marca_logo">
+    <a href="/lenovo" style="border:0;text-decoration:none;"><img src="/marcas/lenovo.jpg" alt="Tienda Lenovo" class="cssImgMarca"></a>
+</div>
+
+<div class="col-sm-1 marca_logo">
+    <a href="/Samsung" style="border:0;text-decoration:none;"><img src="/marcas/samsung.jpg" alt="Tienda Samsung" class="cssImgMarca"></a>
+</div>
+
+<div class="col-sm-1 marca_logo">
+    <a href="/toshiba" style="border:0;text-decoration:none;"><img src="/marcas/toshiba.jpg" alt="Tienda Toshiba" class="cssImgMarca"></a>
+</div>
+<div class="col-sm-1 marca_logo">
+    <a href="/dell" style="border:0;text-decoration:none;"><img src="/marcas/dell.jpg" alt="Tienda Dell" class="cssImgMarca"></a>
+</div>
+
+<div class="col-sm-1 marca_logo">
+    <a href="/aoc" style="border:0;text-decoration:none;"><img src="/marcas/aoc.jpg" alt="Tienda AOC" class="cssImgMarca"></a>
+</div>
+<div class="col-sm-2 marca_logo">
+</div>
+
+
+</div>
+
+        
+ 
+
+
+
+    </div>
+    <div class="column_left column col-sm-3" style="display:none">
+    <!-- MENU -->
+    
+
+
+<div class="widget widget__best-sellers" style="margin-bottom: 8px !important">
+<div class="widget widget__best-sellers" id="blog_destacados">
+<ul class="gradient4 cssMarginTituloBog2" style="padding: 6px 20px 8px!important; font-size:14px; font-weight:600 ;
+ list-style:none; color:#fff;">
+  <li class="firstItem">Blog Destacados</li>
+</ul>
+     <div class="widget_content border_azul">
+        <div class="product-listing product-listing__bestsellers">
+            
+              
+             <div class="product">
+                <div class="product_name">
+                    <a href="http://www.mundotek.com/tema/0000000009" data-original-title="" title="">BBC desarrolla control remoto mental</a>
+                </div>
+            </div>
+              
+             <div class="product">
+                <div class="product_name">
+                    <a href="http://www.mundotek.com/tema/0000000008" data-original-title="" title="">Twitter amplía el número de caracteres a 10.000</a>
+                </div>
+            </div>
+              
+             <div class="product">
+                <div class="product_name">
+                    <a href="http://www.mundotek.com/tema/0000000007" data-original-title="" title="">Twitter apuesta por el video</a>
+                </div>
+            </div>
+            
+              
+             <div class="product">
+                <div class="product_name">
+                    <a href="http://www.mundotek.com/tema/0000000006" data-original-title="" title="">Skype lanza nueva aplicación Traductor de voz</a>
+                </div>
+            </div>
+            
+              
+             <div class="product">
+                <div class="product_name">
+                    <a href="http://www.mundotek.com/tema/0000000005" data-original-title="" title="">Todo lo que necesitas saber sobre Windows 10</a>
+                </div>
+            </div>
+                        
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<div class="widget widget__best-sellers" style="margin-bottom: 8px !important;margin-top: 8px !important;">
+    <h3 class="widget_header gradient4" style="padding-left:20px;">Únete a Nosotros</h3>
+          <div class="widget_content border_azul">
+        <div class="product-listing product-listing__bestsellers">
+          <div class="product" style="padding: 0px; height:auto;padding-top: 0px;margin: 0px;width: 100%;border-radius: 5px;">
+          
+
+          <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/mundotek" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=0&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmundotek&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=true"><span style="vertical-align: bottom; width: 340px; height: 500px;"><iframe name="f51bfd0d799f4c" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:page Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FiPrOY23SGAp.js%3Fversion%3D42%23cb%3Df3e560e6022d9%26domain%3Dwww.mundotek.com%26origin%3Dhttp%253A%252F%252Fwww.mundotek.com%252Ff1a9fe24ae7054%26relation%3Dparent.parent&amp;container_width=0&amp;hide_cover=true&amp;href=https%3A%2F%2Fwww.facebook.com%2Fmundotek&amp;locale=es_LA&amp;sdk=joey&amp;show_facepile=true&amp;show_posts=true&amp;small_header=true" class="" style="border: none; visibility: visible; width: 340px; height: 500px;"></iframe></span></div>
+
+          </div>
+        </div>
+          </div>
+</div>
+<div class="widget widget_custom" style="margin-bottom: 8px!important; display:none">
+<div class="widget_content">
+    <div class="custom_sidebar custom_sidebar2" itemscope="">
+        <a class="trs_hover" itemprop="telephone">
+        <i class="fa fa-phone"></i>
+        <h3>LLamanos al:</h3>
+        <h4>(01) 271-0630</h4>
+        </a>
+    </div>
+</div>
+</div>
+
+    <!-- Fin de MENU -->
+</div>
+    </div>
+</div>
+</div>
+    <!-- Pie de Página -->
+    
+<div id="bottom" class="oculto" style="margin: 100px 0px 0px 0px; border-top: 15px solid #0096d5;background: #0096d5;">
+<div class="container">
+
+
+
+
+<div class="row" style="padding-bottom:10px">
+
+    <div class="col-sm-3 col-xs-6 custom_footer1">
+    <h3 style="font-weight:bold; font-size:13px">Mundotek</h3>
+    <ul class="list">
+        <li><a href="/acerca-de-nosotros" title="" style="color:#B2E3FF; font-size:13px">¿Quiénes Somos?</a></li>
+        <li><a href="/Ventas-Corporativas" title="" style="color:#B2E3FF; font-size:13px">Ventas Corporativas</a></li>
+        <li><a href="/blog" title="" style="color:#B2E3FF; font-size:13px">Blog</a></li>
+        <li><a href="/preguntas-frecuentes" title="" style="color:#B2E3FF; font-size:13px">Preguntas Frecuentes</a></li>
+        <li><a href="/contactenos.aspx" title="" style="color:#B2E3FF; font-size:13px">Contáctenos</a></li>
+        <!--<li><a href="/mapa_sitio.aspx" title="" style="color:#B2E3FF; font-size:13px">Mapa del Sitio</a></li>-->
+    </ul>
+    </div>
+   
+
+    <div class="col-sm-3 col-xs-6 custom_footer2">
+     <h3 style="font-weight:bold; font-size:13px">Mi cuenta</h3>
+    <ul class="list">
+        <li><a href="/secure/Login.aspx" title="" style="color:#B2E3FF; font-size:13px">Iniciar Sesión</a></li>
+        <li><a href="/carrito" title="" style="color:#B2E3FF; font-size:13px">Mi carrito de compras</a></li>
+        <li><a href="/formas-pago" title="" style="color:#B2E3FF; font-size:13px">Formas de Pago</a></li>
+        <li><a href="/terminos-y-condiciones" title="" style="color:#B2E3FF; font-size:13px">Términos y Condiciones</a></li>
+        <li><a href="/servicioalcliente" title="" style="color:#B2E3FF; font-size:13px">Servicio al Cliente</a></li>
+    </ul>
+    </div>   
+    
+
+    <div class="col-sm-3 col-xs-6 custom_footer2">
+     <h3 style="font-weight:bold; font-size:13px"><a href="/tiendas" style="color: #fff; font-weight: bold; font-size: 13px;">Tiendas Exclusivas</a></h3>
+    <ul class="list">
+        <li><a href="/apple" title="" style="color:#B2E3FF; font-size:13px">Tienda Apple</a></li>
+        <li><a href="/hp" title="" style="color:#B2E3FF; font-size:13px">Tienda HP</a></li>
+        <li><a href="/D-link" title="" style="color:#B2E3FF; font-size:13px">Tienda D-Link</a></li>
+        <!--<li><a href="/LEOTEC" title="" style="color:#B2E3FF; font-size:13px">Tienda Leotec</a></li>-->
+        <li><a href="/Samsung" title="" style="color:#B2E3FF; font-size:13px">Tienda Samsung</a></li>
+        <li><a href="/lenovo" title="" style="color:#B2E3FF; font-size:13px">Tienda Lenovo</a></li>
+		<li><a href="/toshiba" title="" style="color:#B2E3FF; font-size:13px">Tienda Toshiba</a></li>
+		<li><a href="/aoc" title="" style="color:#B2E3FF; font-size:13px">Tienda AOC</a></li>
+    </ul>
+    </div>
+
+
+    <div class="col-sm-3 col-xs-6 custom_footer4">
+    <h3 style="font-weight:bold; font-size:13px;">Suscríbete</h3>
+    <div style="/* width:100%; */vertical-align: middle;display: block;padding-top: 10px;">
+  <span style="    color: #B2E3FF;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 8px;">Recibe nuestros boletines de noticias, ofertas y promociones</span>
+  <input name="email_sus" id="email_sus" type="text" class="form-control" style="max-width: 190px;border-top-right-radius: 0;border-bottom-right-radius: 0;display:inline-block" placeholder="Ingresa tu Correo Electrónico">
+  <input type="button" id="btnSuscribirsePie" value="Enviar" class="btn btnagregarcarro celeste" style="color: #fff !important; border: 0px; height: 34px; margin-left: -5px;border-top-left-radius: 0; border-bottom-left-radius: 0;display:inline-block">
+    </div>
+    
+     <h3 style="font-weight:bold; font-size:13px; padding-top:20px;">Síguenos</h3>
+<table style="width: 175px; margin-top:10px;">
+<tbody>
+<tr>
+<td style="width: 35px;">
+  <a href="https://www.facebook.com/mundotek" target="_blank"><img src="/images/pie/face.png" class="img_redes_sociales_pie" alt="facebook"></a>
+</td>
+<td style="width: 35px;">
+  <a href="https://twitter.com/MundotekPeru" target="_blank"><img src="/images/pie/twitter.png" class="img_redes_sociales_pie" alt="twitter"></a>
+</td>
+<td style="width: 35px;">
+  <a href="https://plus.google.com/+Mundotek2" target="_blank"><img src="/images/pie/google.png" class="img_redes_sociales_pie" alt="google plus"></a>
+</td>
+<td style="width: 35px;">
+  <a href="https://www.linkedin.com/company/mundotek" target="_blank"><img src="/images/pie/linkedin.png" class="img_redes_sociales_pie" alt="linkedin"></a>
+</td>
+<td style="width: 35px;">
+  <a href="/blog"><img src="/images/pie/rss.png" class="img_redes_sociales_pie" alt="blog"></a>
+</td>
+</tr>
+</tbody></table>
+    
+    </div>
+    
+</div>
+
+</div>
+
+ <div class="row" id="cintaTarjetasPie" style="background:#FFF;margin-bottom:0; margin-top:10px;">
+      
+        <div class="cintaTarjetasPie">
+        
+        <div>
+                <img src="/img/pagos.png">
+            </div>
+        
+           <!-- <div>
+                <img src="/img/visa.png">
+            </div>
+            <div>
+                <img src="/img/verified-by-visa.png">
+            </div>
+            <div>
+                <img src="/img/mastercard.png">
+            </div>
+            <div>
+               <img src="/img/mastercard-securecode.png">
+            </div>
+            <div>
+               <img src="/img/amex.png">
+            </div>
+            <div>
+               <img src="/img/AExp_SafeKey_Registered_163px.jpg">
+            </div>
+            <div>
+               <img src="/img/Diners.png" style="
+    /* width: 80px; */
+    /* height: 70px !important; */
+    /* max-height: none; */
+">
+            </div>  
+            
+            -->
+                              
+        </div>
+ </div>
+ 
+</div>
+
+<!-- end of #wrapper -->
+
+<!-- FOOTER -->
+<footer id="footer" class="oculto ">
+    <div class="container" style="margin-left: auto; margin-right: auto;">
+    <div class="copyright" role="contentinfo">
+    © 2015 PC PERFORMANCE. All Rights Reserved. 
+    | 
+    <i class="fa fa-map-marker" style="line-height: 20px;"></i>&nbsp;Av. Tomás Marsano 2601 Higuereta, Surquillo
+    | 
+    <i class="fa fa-phone" style="line-height: 20px;"></i>&nbsp;(01) 271-0630 
+    |
+    <i class="fa fa-envelope" style="line-height: 16px;"></i>&nbsp;info@mundotek.com
+    </div>
+    </div>
+</footer>
+<a class="scrollup" href="#wrapper">
+</a>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var div_ancho = $("#wrapper").width();
+        $('.customselect_wrap select').customSelect();
+
+        /* scroll UP boton*/
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+
+        $('.scrollup').click(function () {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        });
+    });
+</script>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://staticxx.facebook.com/connect/xd_arbiter/r/iPrOY23SGAp.js?version=42#channel=f1a9fe24ae7054&amp;origin=http%3A%2F%2Fwww.mundotek.com" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/iPrOY23SGAp.js?version=42#channel=f1a9fe24ae7054&amp;origin=http%3A%2F%2Fwww.mundotek.com" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Fin de pie de página -->
+    </div>
+    </form>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70667067-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+
+<div id="modal-bg" class="bg-fade"></div></body>
